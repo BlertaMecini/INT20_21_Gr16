@@ -6,21 +6,30 @@
     list-style: none; 
     box-sizing: border-box; 
 }
+html{
+    height:100%; 
+}
 
 body 
 { 
     font-family: 'IBM Plex Sans', sans-serif; 
+    background-color: aliceblue;
+    position:relative;
+    display:flex; 
+    flex-direction: column;
 
+    min-height: 100%;
 }
 
 nav 
 { 
-    background: rgba(10, 126, 126,0.8); 
+    background: rgb(10, 126, 126); 
     height: 80px; 
     width: 100%; 
 } 
 .logo 
-{  
+{  width:auto;
+    height:auto; 
     padding-top: 9px;
     padding-bottom: 5px; 
     padding-left: 10px; 
@@ -38,7 +47,7 @@ nav ul li
  display: inline-block; 
  line-height: 80px; 
  margin: 0 5px; 
- position: static;
+ position: ;
 }
 nav ul li a 
 { 
@@ -69,7 +78,14 @@ a.active, a:hover
 {  display: none;
 }
 
-@media (max-width: 1380px)
+footer
+{ text-align: center ;
+   background: rgb(10, 126, 126); 
+  padding: 20px; 
+margin-top: auto;
+}
+
+@media (max-width: 1108px)
 { 
     .check-button
     { 
@@ -108,3 +124,5 @@ a:hover,a.active
     left: 0; 
 }
 }
+
+
