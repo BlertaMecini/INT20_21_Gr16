@@ -1,16 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>
-
-        </title>
-
-
-    </head>
+<head>
+    <title>Login and Registration</title>
+    <link rel="stylesheet" type="text/css" href="styles/loginstyle.css">
+</head>
 <body>
+    <div class="lform">
+        <div class="formb">
+            <div class="buttonbox">
+                <div id="btn"></div>
+
+                <button type="button" class="tbtn" onclick="login()">Log In</button>
+                <button type="button" class="tbtn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="inputgr">
+                <input type="text" class="inputfield" placeholder="Username" required>
+                <input type="password" class="inputfield" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+
+                <button type="submit" class="submitbtn">
+                    Log In
+
+                </button>
+            </form>
+            <form id="register" class="inputgr">
+                <input type="text" class="inputfield" placeholder="Username" required>
+                <input type="Email" class="inputfield" placeholder="Email" required>
+                <input type="password" class="inputfield" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box" required><span>I agree to the terms & conditions</span>
+
+                <button type="submit" class="submitbtn">
+                    Register
+
+                </button>
+
+            </form>
+            <div class="socialicons">
+                <a href="https://www.facebook.com/" target="_blank">
+                    <img src="facebook.png">
+                </a>
+
+                <a href="https://www.google.com/" target="_blank">
+                    <img src="google.png">
+                </a>
+            </div>
 
 
+        </div>
+
+
+    </div>
 </body>
+
+<script>
+
+var x = document.getElementById("login");
+var y = document.getElementById("register");
+var z = document.getElementById("btn");
+
+function register(){
+	x.style.left = "-400px";
+	y.style.left = "50px";
+	z.style.left = "110px";
+}
+function login(){
+	x.style.left = "50px";
+	y.style.left = "450px";
+	z.style.left = "0";
+
+}
+
+
+</script>
+
+
+
 
 
 </html>
