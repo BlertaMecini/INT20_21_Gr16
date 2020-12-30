@@ -1,38 +1,118 @@
 <!DOCTYPE html> 
 <html> 
     <head> 
+      <!-- External links and scripts-->
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
         <link href="styles/homepage-styles.css" rel="stylesheet" type="text/css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
        <meta charset="utf-8"> 
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title> | Mental Health And Wellbeing | </title>
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+     <title> Mental Health And Wellbeing </title>    <!--Web page's title-->
     </head>
 
 <body> 
-    
 <header>
+  <!--Start of navbar-->
     <nav> 
-        <img src="images/logo.jpg" alt="Website's logo."  id="logo" class="logo">
+       <a href="homepage.html"><img src="/images/logo.png" alt="Website's logo."  id="logo"></a> 
         <input type="checkbox"  id="check" class="check">
         <label for="check" class="check-button"> 
             <i class="fas fa-bars"> </i>
         </label>
-        <ul> 
+        <ul>    
             <li><a id="active" href="homepage.html">Home</a></li>
             <li><a href="learn-about-mental-disorders.html">Learn about mental disorders</a></li>
             <li><a href="get-help.html">Get help </a></li>
             <li><a href="faq.html">faq </a></li>
             <li><a href="contact.html">Contact us</a></li>
-        </ul>
-    </nav>
-    </header>
-        <main> 
             
-        </main>
+        </ul>
+    </nav> <!--End of navbar-->
+    </header>
+    <!--Back to top button-->
+    <button onclick="topFunction()", id="myBtn" ,title="Go to top"> <i class="fas fa-angle-double-up"></i></button>  
+    <!--Images slideshow-->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img src="images/slide1.png", style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/slide2.png", style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img src="images/slide3.png", style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }a
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+
+     <script>
+      //Get the button
+      var mybutton = document.getElementById("myBtn");
+      
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function() {scrollFunction()};
+      
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+      </script>
+      
     <footer> 
-        
-            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Fiek Students</p>
+      
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> ,Mental Health and Wellbeing. All Rights Reserved.</p>
+           
+
 
     </footer>
 </body>
