@@ -9,8 +9,8 @@
 	width: 100%;
 	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../images/mental.jpg");
 	background-position: center;
-	background-size: cover;
-	position: absolute;
+	background-size: cover; 
+	display: flex;  
 }
 
 

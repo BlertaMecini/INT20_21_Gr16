@@ -3,14 +3,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mental disorders</title>
-    <link href="styles/mental-disorders-styles.css" rel="stylesheet" type="text/css">
+    <link href="styles/mental-disorders-styles.css" rel="stylesheet" type="text/css"> 
+    <link href="styles/header-style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
+     <!--Start of navbar-->
+     <nav> 
+              
+        <a id="mylogo" href="homepage.html"><img src="/images/logo.png" alt="Website's logo."  id="logo"></a> 
+      
+       <input type="checkbox"  id="check" class="check">
+         <label for="check" class="check-button"> 
+             <i class="fas fa-bars"> </i>
+         </label>
+         <ul>    
+             <li><a href="homepage.html">Home</a></li>
+             <li><a class="active" href="learn-about-mental-disorders.html">Learn about mental disorders</a></li>
+             <li><a href="get-help.html">Get help </a></li>
+             <li><a href="faq.html">faq </a></li>
+             <li><a href="contact.html">Contact us</a></li>
+             <button id="login-btn" onclick="location.href='login.html';">Log in</button> </a> 
+           
+             
+         </ul>
+     </nav> <!--End of navbar-->
+     </header>
+
+
     <h1>Mental disorders</h1>
     <p>Ka shumë çrregullime të ndryshme mendore, me prezantime të ndryshme.
      Ata përgjithësisht karakterizohen nga një kombinim i mendimeve anormale, perceptimeve, emocioneve, sjelljes dhe marrëdhënieve me të tjerët.</p>
      <h2>Çrregullimet mendore përfshijnë:</h2>
-     <nav>
+     <div>
          <ul>
              <li><a href=#>Depresionin</a></li>
              <li><a href=#>çrregullimin bipolar</a></li>
@@ -23,6 +49,11 @@
             </li>
              <li><a href=#>çrregulimet e zhvillimit si autizmi</a></li>
          </ul>
-    </nav>
+        </div> 
+    <footer> 
+                
+        <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> ,Mental Health and Wellbeing. All Rights Reserved.</p>
+       
+    </footer>
 </body>
 </html>

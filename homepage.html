@@ -1,48 +1,80 @@
 <!DOCTYPE html> 
 <html> 
     <head> 
-      <!-- External links and scripts-->
+      <!-- External links, scripts and metadata-->
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
         <link href="styles/homepage-styles.css" rel="stylesheet" type="text/css">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
-       <meta charset="utf-8"> 
+        <link href="styles/header-style.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <meta charset="utf-8"> 
        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-     <title> Mental Health And Wellbeing </title>    <!--Web page's title-->
+       <meta name="Description" content="This page is created by a group of students trying to raise mental health awareness. In this page you'll find things like: mental health problems, activities that help you manage mental disorders and much more. Have fun scrolling!"> 
+     <title> Mental Health And Wellbeing | Homepage</title>    <!--Web page's title-->
     </head>
 
 <body> 
 <header>
   <!--Start of navbar-->
     <nav> 
-       <a href="homepage.html"><img src="/images/logo.png" alt="Website's logo."  id="logo"></a> 
-        <input type="checkbox"  id="check" class="check">
+      
+       <a id="mylogo"  href="homepage.html"><img src="/images/logo.png" alt="Website's logo."  id="logo"></a> 
+     
+      <input type="checkbox"  id="check" class="check">
         <label for="check" class="check-button"> 
             <i class="fas fa-bars"> </i>
         </label>
         <ul>    
-            <li><a id="active" href="homepage.html">Home</a></li>
+            <li><a class="active" href="homepage.html">Home</a></li>
             <li><a href="learn-about-mental-disorders.html">Learn about mental disorders</a></li>
             <li><a href="get-help.html">Get help </a></li>
             <li><a href="faq.html">faq </a></li>
             <li><a href="contact.html">Contact us</a></li>
+            <button id="login-btn" onclick="location.href='login.html';">Log in</button> </a> 
+          
             
         </ul>
     </nav> <!--End of navbar-->
     </header>
-    <!--Back to top button-->
-    <button onclick="topFunction()", id="myBtn" ,title="Go to top"> <i class="fas fa-angle-double-up"></i></button>  
+
+
+     <!--Back to top button-->
+
+     <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fas fa-angle-double-up"></i></button>  
+     <script> 
+                //Get the button
+                var mybutton = document.getElementById("myBtn");
+                
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+                
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+              </script>
+  
+
     <!--Images slideshow-->
             <div class="slideshow-container">
                 <div class="mySlides fade">
-                  <img src="images/slide1.png", style="width:100%">
+                  <img  class ="slideshow-imgs" src="images/slide1.png", style="width:100%">
                 </div>
                 
                 <div class="mySlides fade">
-                  <img src="images/slide2.png", style="width:100%">
+                  <img  class ="slideshow-imgs" src="images/slide2.png", style="width:100%">
                 </div>
                 
                 <div class="mySlides fade">
-                  <img src="images/slide3.png", style="width:100%">
+                  <img  class ="slideshow-imgs" src="images/slide3.png", style="width:100%">
                 </div>
                 
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -57,6 +89,7 @@
                   <span class="dot" onclick="currentSlide(3)"></span> 
                 </div>
 
+      
                 <script>
                     var slideIndex = 1;
                     showSlides(slideIndex);
@@ -86,34 +119,73 @@
                     }
                     </script>
 
-     <script>
-      //Get the button
-      var mybutton = document.getElementById("myBtn");
-      
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function() {scrollFunction()};
-      
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          mybutton.style.display = "block";
-        } else {
-          mybutton.style.display = "none";
-        }
-      }
-      
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-      </script>
-      
+<div class="box-section">
+
+<div id="box1" class="box">
+  <p><h3>Defining mental health</h3><br>  
+     Mental health is a positive concept related to the <i>social and emotional wellbeing</i> of individuals and communities.
+    The concept is influenced by culture, but it generally relates to:
+  
+   <ol id="list1"> 
+   <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Enjoyment of life.</mark></li> <br> 
+   <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Having the ability to cope with and ‘bounce back’ from stress and sadness.</mark></li> <br>
+   <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Being able to set and fulfill goals.</mark></li> <br>
+    <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Having the capability to build and maintain relationships with others.</mark></li> <br>
+  </ol>
+    </p> <br> 
+    <button class="clickme" onclick="location.href='learn-about-mental-disorders.html';">Read More</button>
+</div>
+
+
+<div id="box2" class="box">
+  <p><h3>Influences on mental health</h3><br>  
+    Mental health is influenced by biological, psychological, social and environmental factors which interact in complex ways. Ex:
+ 
+  <ol id="list2"> 
+  <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Structural factors such as safe living environments, education, freedom from violence, and access to economic resources</mark></li> <br> 
+  <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Community factors such as a positive sense of belonging, activities to highlight and embrace diversity, social support, and participation in society</mark></li> <br>
+  <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Individual factors such as the ability to manage thoughts and having social skills to support connection with others.</mark></li> <br>
+ </ol>
+   </p>
+   <button class="clickme" onclick="location.href='learn-about-mental-disorders.html';">Read More</button>
+</div>
+
+<div id="box3" class="box">
+  <p>  
+   <h3> Tips for mental health and wellbeing</h3> <br> 
+  We all know that to keep a car going, we have to fill it with petrol, check the oil and water regularly and give the tires some air.
+  <br>  To see a bank balance grow, we need to make steady deposits. But how often do we take the time to reflect on whether we are giving ourselves what we need to flourish and live well?
+   <br> <br> <mark style="background-color:rgba(166, 255, 0, 0.479)">It can be so easy for us to take our mental health for granted; <br> 
+   to prioritise other things; <br> to put it off until next week. </mark>
+   <br>   It can also seem too big and too hard. But it’s not. There are some things everyone can do.<br> 
+  </p> <br> 
+   <button class="clickme" onclick="location.href='get-help.html';">Read More</button>
+  </div> 
+
+
+<div id="box4" class="box">
+  <p><h3>Recovery Is Possible</h3><br>  
+    Most people with mental health problems can get better. Treatment and recovery are ongoing processes that happen over time. The first step is getting help.
+    <br><br> <strong> What Is Recovery?</strong> <br> 
+    Recovery from mental disorders and/or substance abuse disorders is a process of change through which individuals:
+
+ 
+  <ol id="list3"> 
+  <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Improve their health and wellness</mark></li> <br> 
+  <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Live a self-directed life</mark></li> <br>
+  <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Strive to achieve their full potential</mark></li> <br>
+ </ol>
+   </p><br> 
+   <button class="clickme" onclick="location.href='get-help.html';">Read More</button>
+</div>
+  
+</div>
+
     <footer> 
       
             <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> ,Mental Health and Wellbeing. All Rights Reserved.</p>
            
-
-
     </footer>
 </body>
+
 </html>
