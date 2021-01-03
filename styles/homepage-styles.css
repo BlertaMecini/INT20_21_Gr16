@@ -1,6 +1,24 @@
+/*styling the slideshow section*/ 
+
+.slideshow-section 
+{ 
+  width: 100%; 
+  height: 630px;
+  background-color: rgb(235, 246, 247); 
+  clip-path: polygon(100% 0, 100% 90%, 69% 100%, 0 85%,0 0 );
+
+}
+@media screen and (max-width: 1000px)
+{ 
+  .slideshow-section 
+{  
+  height: 57vh;
+}
+}
 
 .mySlides 
-{ display: none;
+{ 
+  display: none;
 }
 
 .slideshow-imgs {
@@ -14,7 +32,7 @@
   margin-top: 2% ; 
   margin-left: auto;
   margin-right: auto;
- 
+
 }
 
 /* Next & previous buttons */
@@ -39,7 +57,7 @@
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/* On hover, add a background color */
 .prev:hover, .next:hover {
   background-color: #bbb;
 }
@@ -53,7 +71,8 @@
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease; 
+  
 }
 
 .active, .dot:hover {
@@ -93,12 +112,26 @@
 
 .box-section 
 { 
-  width:100%; 
+  width:70%; 
   margin:1% auto;
   display: flex;
   flex-flow: row wrap ; 
   justify-content: center;
+  background-color:rgb(248, 240, 229); 
+  border-bottom-left-radius: 40% 20%;
+  border-bottom-right-radius: 40% 20%;
+  border-top-left-radius: 40% 20%;
+  border-top-right-radius: 40% 20%;
   
+}
+@media  screen and (max-width: 700px)
+
+{ 
+  .box-section 
+{ 
+  width:100%; 
+
+} 
 }
 .box 
 { 
@@ -120,7 +153,7 @@
   
 .box:hover 
 { 
-  transform: scale(1.2);
+  transform: scale(1.15);
   background:rgba(10, 126, 126, 0.3);
 
 }
@@ -133,3 +166,234 @@
   text-align: center; 
   cursor: pointer;
 }
+
+
+.quote-section
+{ 
+  width: 100%; 
+  height: auto; 
+  display:flex; 
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  background-color:rgb(235, 246, 247) ;
+}
+
+.myquote 
+{ 
+  width:288px; 
+  height:320px; 
+  margin-top: 4%;
+  margin-bottom: 4%;
+  margin-left:auto; 
+  margin-right: auto;
+
+  background:rgb(248, 240, 229); 
+  color: black; 
+  display: flex; 
+  float:left; 
+  justify-content: center;
+  align-items:center; 
+  position:relative; 
+  
+}
+
+.myquote .quote p:nth-child(1)
+{ 
+  margin: 20px; 
+  font-size: 100%; 
+}
+
+
+.myquote .quote p:nth-child(2)
+{ 
+  margin: 0 0 0 100px; 
+  font-size: 100%; 
+}
+
+
+#quotesymbl 
+{ 
+  position:absolute; 
+  bottom:25px; 
+  right:-10px; 
+}
+
+#quotesymbr
+{ 
+  position: absolute; 
+  top:-15px; 
+  left:-15px; 
+}
+.myquote:hover 
+{ 
+  animation: spin 3s;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#rainimg 
+{  height: 100%; 
+   width: 45%;   
+   margin-left:auto;
+   margin-right:auto; 
+
+}
+
+.shiny-button
+{ 
+  text-decoration: none;
+  padding: 20px 10px ; 
+  margin-right: 2%; 
+  border: 3px solid #aaa; 
+  color:#aaa; 
+  transition-delay: 0.1s;
+  position: relative;
+  overflow: hidden;
+}
+
+.shiny-button::before
+{ 
+  content: " ";
+  position: absolute;
+  width: 200px; 
+  height:120px;
+  background-color: rgba(255,255,255,0.2);
+  transform: translateX(-120%) rotate(45deg);
+  transition: all 1.2s cubic-bezier(0.15, 1,0.19,1); 
+}
+
+
+.shiny-button:hover
+{ 
+  border: 3px solid #fff; 
+  color: #fff; 
+}
+
+.shiny-button:active 
+{
+  background-color: #fff;
+  color:#111; 
+}
+
+.shiny-button:hover::before 
+{ 
+  background-color: #fff;
+  transform: translate(115%, -50px) rotate(90deg); 
+}
+
+
+.team-section
+{ 
+  margin: 5% auto;  
+ 
+}
+
+
+.title 
+{ 
+  position: relative; 
+  text-align: center;
+  text-transform: capitalize; 
+  color: #1dd3bd; 
+  margin: 10px 0; 
+}
+
+.title:after 
+{ 
+  content:" "; 
+  position: absolute; 
+  width: 20%; 
+  height:2px; 
+  bottom: -10px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  background-image: linear-gradient(to left, transparent 5%, #1dd3bd);
+}
+
+.team-row 
+{
+  padding: 40px 0; 
+  max-width: 1440px; 
+  margin: 0 auto; 
+  display: flex; 
+  justify-content: center;
+  flex-wrap:wrap; 
+ 
+}
+
+.member 
+{ 
+  flex: 1 1 250px; 
+  max-width:300px; 
+  padding: 20px 20px; 
+  margin: 20px; 
+  text-align: center; 
+  transition: all 0.3s;
+  cursor: pointer; 
+  border-radius: 5px; 
+  background: rgb(243, 187,211);
+  background: linear-gradient(90deg, rgba(243, 187,211,0.6)0%, rgba(167,207,255,0.6)100%);
+}
+.member:hover 
+{
+  box-shadow: 0 0 20px rgba(201, 156, 156, 0.8);
+  transform: translateY(-20px); 
+}
+
+.memberimg { 
+  display: block; 
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
+  margin: 0 auto; 
+  object-fit: cover;
+  border: 4px solid #818181; 
+}
+
+.member h2 
+{ 
+  text-transform: uppercase;
+  margin: 15px 0; 
+  font-size:24px; 
+  color: #818181; 
+}
+
+
+.member p
+{
+  font-size: 15px; 
+  color: #818181; 
+  line-height: 1.6;
+}
+
+.social-media h3 
+{
+  color:rgba(3, 3, 3, 0.541); 
+}
+
+.social-media #fbicon, #igicon  
+{ 
+  font-size: 30px; 
+  margin:4%; 
+  border-radius: 50%;
+  padding: 10px 10px; 
+}
+#fbicon {
+  background: #3B5998;
+  color: white;
+}
+#igicon 
+{
+    background: #d66cbf;
+    color: white;
+}
+
+.social-media a:hover 
+{ 
+ background: none; 
+} 
