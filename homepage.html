@@ -1,39 +1,306 @@
 <!DOCTYPE html> 
 <html> 
     <head> 
+      <!-- External links, scripts and metadata-->
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
         <link href="styles/homepage-styles.css" rel="stylesheet" type="text/css">
-        <script src="https://kit.fontawesome.com/a076d05399.js"></script> 
-       <meta charset="utf-8"> 
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title> | Mental Health And Wellbeing | </title>
+        <link href="styles/header-style.css" rel="stylesheet" type="text/css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <meta charset="utf-8"> 
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+       <meta name="Description" content="This page is created by a group of students trying to raise mental health awareness. In this page you'll find things like: mental health problems, activities that help you manage mental disorders and much more. Have fun scrolling!"> 
+     <title> Mental Health And Wellbeing | Homepage</title>    <!--Web page's title-->
     </head>
 
 <body> 
-    
 <header>
+  <!--Start of navbar-->
     <nav> 
-        <img src="images/logo.jpg" alt="Website's logo."  id="logo" class="logo">
-        <input type="checkbox"  id="check" class="check">
+      
+       <a id="mylogo"  href="homepage.html"><img src="/images/logo.png" alt="Website's logo."  id="logo"></a> 
+     
+      <input type="checkbox"  id="check" class="check">
         <label for="check" class="check-button"> 
             <i class="fas fa-bars"> </i>
         </label>
-        <ul> 
-            <li><a id="active" href="homepage.html">Home</a></li>
+        <ul>    
+            <li><a class="active" href="homepage.html">Home</a></li>
             <li><a href="learn-about-mental-disorders.html">Learn about mental disorders</a></li>
             <li><a href="get-help.html">Get help </a></li>
             <li><a href="faq.html">faq </a></li>
             <li><a href="contact.html">Contact us</a></li>
-        </ul>
-    </nav>
-    </header>
-        <main> 
+            <button id="login-btn" onclick="location.href='login.html';">Log in</button> </a> 
+          
             
-        </main>
-    <footer> 
-        
-            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, Fiek Students</p>
+        </ul>
+    </nav> <!--End of navbar-->
+    </header>
 
+
+     <!--Back to top button-->
+
+     <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fas fa-angle-double-up"></i></button>  
+     <script> 
+                //Get the button
+                var mybutton = document.getElementById("myBtn");
+                
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+                
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+              </script>
+  
+
+    <!--Images slideshow-->
+    <div class="slideshow-section"> 
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <img  class ="slideshow-imgs" src="images/slide1.png", style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img  class ="slideshow-imgs" src="images/slide2.png", style="width:100%">
+                </div>
+                
+                <div class="mySlides fade">
+                  <img  class ="slideshow-imgs" src="images/slide3.png", style="width:100%">
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+              </div>
+      
+                <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }a
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("mySlides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+                    </script>
+
+<div class="box-section">
+
+<div id="box1" class="box">
+  <p><h3>Defining mental health</h3><br>  
+     Mental health is a positive concept related to the <i>social and emotional wellbeing</i> of individuals and communities.
+    The concept is influenced by culture, but it generally relates to:
+  
+   <ol id="list1"> 
+   <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Enjoyment of life.</mark></li> <br> 
+   <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Having the ability to cope with and ‘bounce back’ from stress and sadness.</mark></li> <br>
+   <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Being able to set and fulfill goals.</mark></li> <br>
+    <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Having the capability to build and maintain relationships with others.</mark></li> <br>
+  </ol>
+    </p> <br> 
+    <button class="clickme" onclick="location.href='learn-about-mental-disorders.html';">Read More</button>
+</div>
+
+
+<div id="box2" class="box">
+  <p><h3>Influences on mental health</h3><br>  
+    Mental health is influenced by biological, psychological, social and environmental factors which interact in complex ways. Ex:
+ 
+  <ol id="list2"> 
+  <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Structural factors such as safe living environments, education, freedom from violence, and access to economic resources</mark></li> <br> 
+  <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Community factors such as a positive sense of belonging, activities to highlight and embrace diversity, social support, and participation in society</mark></li> <br>
+  <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Individual factors such as the ability to manage thoughts and having social skills to support connection with others.</mark></li> <br>
+ </ol>
+   </p>
+   <button class="clickme" onclick="location.href='learn-about-mental-disorders.html';">Read More</button>
+</div>
+
+<div id="box3" class="box">
+  <p>  
+   <h3> Tips for mental health and wellbeing</h3> <br> 
+  We all know that to keep a car going, we have to fill it with petrol, check the oil and water regularly and give the tires some air.
+  <br>  To see a bank balance grow, we need to make steady deposits. But how often do we take the time to reflect on whether we are giving ourselves what we need to flourish and live well?
+   <br> <br> <mark style="background-color:rgba(166, 255, 0, 0.479)">It can be so easy for us to take our mental health for granted; <br> 
+   to prioritise other things; <br> to put it off until next week. </mark>
+   <br>   It can also seem too big and too hard. But it’s not. There are some things everyone can do.<br> 
+  </p> <br> 
+   <button class="clickme" onclick="location.href='get-help.html';">Read More</button>
+  </div> 
+
+
+<div id="box4" class="box">
+  <p><h3>Recovery Is Possible</h3><br>  
+    Most people with mental health problems can get better. Treatment and recovery are ongoing processes that happen over time. The first step is getting help.
+    <br><br> <strong> What Is Recovery?</strong> <br> 
+    Recovery from mental disorders and/or substance abuse disorders is a process of change through which individuals:
+
+ 
+  <ol id="list3"> 
+  <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Improve their health and wellness</mark></li> <br> 
+  <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Live a self-directed life</mark></li> <br>
+  <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Strive to achieve their full potential</mark></li> <br>
+ </ol>
+   </p><br> 
+   <button class="clickme" onclick="location.href='get-help.html';">Read More</button>
+</div>
+  
+</div>
+
+
+
+<div class="quote-section"> 
+
+  <div class="myquote"> 
+    <i id="quotesymbl" class=" fas fa-quote-left fa-3x"></i>
+    <i id="quotesymbr" class=" fas fa-quote-right fa-3x"></i>
+    <div class="quote"> 
+      <p>“Mental health problems don’t define who you are. They are something you experience. You walk in the rain and you feel the rain, but, importantly, YOU ARE NOT THE RAIN.” </p>
+      <p> — Matt Haig</p>
+    
+    </div>
+  </div>
+ <a href="https://mentalhealthmatch.com/articles/anxiety/inspiring-mental-health-quotes" target="_blank" class="shiny-button" onclick="confirmfunc()"> 
+  View more quotes...</a>
+  <img  id="rainimg" src="/images/2632949.jpg" alt="girl in rain">
+</div>
+
+<script>  
+
+function confirmfunc()
+{ 
+    alert("Press OK if you want to continue to this site.")
+}
+</script>
+
+<section class="team-section">
+  <h1 class="title">Our Team</h1> 
+  <div class="team-row"> 
+    <div class="member"> 
+      <img class="memberimg" src="/images/blerta1.jpg"> 
+      <h2> Blerta Mecini </h2> 
+      <p> Hi, I'm a 20 years old student of Computer Engineering trying to raise 
+        mental health awareness in our community!
+      </p> 
+      <div class="social-media"> 
+        <h3> Follow me on social media: </h3>
+        <a href="https://www.facebook.com/blerta.mecini" target="_blank">
+        <i  id="fbicon" class="fab fa-facebook"></i> </a>
+        <a href="https://www.instagram.com/blertamecini/" target="_blank"> 
+        <i id="igicon" class="fab fa-instagram"></i> </a>
+      </div>
+    </div>
+
+
+    <div class="member"> 
+      <img class="memberimg" src="/images/diana1.jpg"> 
+      <h2> Diana Beqiri </h2> 
+      <p> I'm Diana. Student of Computer Engineering. My goal is to help everyone that lacks information about mental health and wellbeing!
+      </p>
+      <div class="social-media"> 
+        <h3> Follow me on social media: </h3>
+        <a href="https://www.facebook.com/diana.beqiri.56" target="_blank">
+        <i  id="fbicon" class="fab fa-facebook"></i> </a>
+        <a href="https://www.instagram.com/dianabeqirii/" target="_blank"> 
+        <i id="igicon" class="fab fa-instagram"></i> </a>
+      </div>
+    </div>
+
+    <div  class="member"> 
+      <img  class="memberimg" src=" "> 
+      <h2> Betim Dinaj </h2> 
+      <p> 
+      </p>
+      <div class="social-media"> 
+        <h3> Follow me on social media: </h3>
+        <a href="https://www.facebook.com/betim.dinaj.1" target="_blank">
+        <i  id="fbicon" class="fab fa-facebook"></i> </a>
+        <a href="https://www.instagram.com/betimdinaj/" target="_blank"> 
+        <i id="igicon" class="fab fa-instagram"></i> </a>
+      </div>
+    </div>
+
+    <div  class="member"> 
+      <img  class="memberimg" src=" "> 
+      <h2> Qendrim Gashi </h2> 
+      <p> 
+      </p>
+      <div class="social-media"> 
+        <h3> Follow me on social media: </h3>
+        <a href="https://www.facebook.com/qendrim.7gashi.1" target="_blank">
+        <i  id="fbicon" class="fab fa-facebook"></i> </a>
+        <a href="https://www.instagram.com/qendrimgashi1/" target="_blank"> 
+        <i id="igicon" class="fab fa-instagram"></i> </a>
+      </div>
+    </div> 
+
+
+    <div class="member"> 
+      <img class="memberimg" scr=" "> 
+      <h2> Avdulla Haliti </h2> 
+      <p> 
+      </p>
+      <div class="social-media"> 
+        <h3> Follow me on social media: </h3>
+        <a href="https://www.facebook.com/dulii.ha" target="_blank">
+        <i  id="fbicon" class="fab fa-facebook"></i> </a>
+        <a href="https://www.instagram.com/duli_halitii/" target="_blank"> 
+        <i id="igicon" class="fab fa-instagram"></i> </a>
+      </div>
+    </div> 
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+    <footer> 
+      
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> ,Mental Health and Wellbeing. All Rights Reserved.</p>
+           
     </footer>
 </body>
+
 </html>
