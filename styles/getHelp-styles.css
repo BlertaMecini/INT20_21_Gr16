@@ -6,14 +6,30 @@ article
 }
 .start 
 { 
-    background-image: url(/images/mental-health-blog-banner.png);
-   background-position: center;
-   background-size:cover;
- background-repeat: no-repeat;
+    background-image: url(/images/mentalhealth.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
     height: 500px;
     clip-path: polygon(100% 0, 100% 90%, 69% 100%, 0 85%,0 0 );
     background-attachment: fixed;
     
+}
+
+@media screen and (max-width: 1100px)
+{  
+    .start {
+        background-image: url(/images/mentalhealth.jpg);
+        background-position: center;
+        background-size:contain;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 100%;
+        clip-path: none;
+        background-attachment:scroll;
+        margin-top: 2%;
+        
+    }
 }
 
  #title  
