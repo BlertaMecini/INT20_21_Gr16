@@ -1,0 +1,141 @@
+
+article 
+{ 
+    width: 100%; 
+    height: 100%; 
+}
+.start 
+{ 
+    background-image: url(/images/mentalhealth.jpg);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    clip-path: polygon(100% 0, 100% 90%, 69% 100%, 0 85%,0 0 );
+    background-attachment: fixed;
+    
+}
+
+@media screen and (max-width: 1100px)
+{  
+    .start {
+        background-image: url(/images/mentalhealth.jpg);
+        background-position: center;
+        background-size:contain;
+        background-repeat: no-repeat;
+        height: 400px;
+        width: 100%;
+        clip-path: none;
+        background-attachment:scroll;
+        margin-top: 2%;
+        
+    }
+}
+
+ #title  
+{ 
+    
+    padding:  2% 5%;
+    font-size: 60px; 
+}
+
+.section1 p 
+{  
+   
+    padding-left: 5%;
+    padding-right: 5%;
+   line-height: 20px;
+
+}
+
+#videos 
+{ 
+    font-size: 25px;
+    line-height:50px;
+}
+
+.video-section
+{ 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+
+}
+#video1, #video2
+{ 
+ width: 50%; 
+ height: auto; 
+
+}
+.section1 button
+{ 
+  padding: 0.5%; 
+} 
+
+.section2
+{ 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background: rgb(139,237,218);
+    background: radial-gradient(circle, rgba(139,237,218,1) 0%, rgba(162,197,236,1) 100%);
+   
+   
+}
+.player1 
+{ 
+    position: relative; 
+    width: 40%;
+    padding:4%;
+ 
+   
+}
+
+.player1 .imgbox1 
+{
+    position: relative; 
+    width: 100%; 
+    height:380px;
+}
+
+.player1 .imgbox1 img 
+{ 
+    position: absolute; 
+    top:0; 
+    left:0; 
+    width: 100%; 
+    height:100%; 
+    object-fit: cover;
+}
+.player1 audio 
+{ 
+    width: 100%; 
+    outline: none; 
+}
+#righparagraph
+{ 
+ color: #000000; 
+ font-family: "Great Vibes", cursive; 
+ font-size: 35px; 
+ line-height: 30px; 
+ font-weight: normal; 
+ margin-bottom: 0;
+  text-align: center; 
+  text-shadow: 0 1px 1px rgb(204, 203, 203);  
+  background: rgb(139,237,218);
+  background: radial-gradient(circle, rgba(139,237,218,1) 0%, rgba(162,197,236,1) 100%);
+}
+
+
+.section1 a:hover
+{ 
+ background:none; 
+
+}
+  
+hr 
+{ 
+    border-style:ridge; 
+    border-color: rgb(191, 216, 216); 
+}
