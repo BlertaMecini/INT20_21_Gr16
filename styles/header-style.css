@@ -2,7 +2,6 @@
 { 
     padding: 0; 
     margin:0; 
-    text-decoration: none; 
     box-sizing: border-box; 
 }
 html
@@ -13,13 +12,13 @@ html
 
 body 
 { 
-    font-family: 'IBM Plex Sans', sans-serif; 
-    font-style:normal; 
+
     background-color:rgba(236, 242, 243, 0.342); 
     position:relative;
     display:flex; 
     flex-direction: column; 
      min-height: 100%;
+
 }
 
 #logo 
@@ -58,9 +57,12 @@ nav ul
 
 nav ul li
 { 
+ font-family: 'IBM Plex Sans', sans-serif;  
+ font-style:normal; 
  display: inline-block; 
  line-height: 80px; 
  margin: 0 5px; 
+
  
 }
 nav ul li a 
@@ -70,8 +72,10 @@ nav ul li a
     padding: 7px 7px; 
     border-radius: 3px; 
     text-transform: uppercase; 
+    text-decoration: none; 
 }
-nav ul li a.active, a:hover 
+
+nav ul li a.active, nav ul li a:hover 
 { 
     background: rgba(0, 0, 0, 0.4);
     transition: 0,5s;  
@@ -168,6 +172,5 @@ nav ul li a:hover, nav ul li a.active
     background: rgb(10, 126, 126); 
     padding: 20px; 
     margin-top: auto;
-   
-  } 
+   } 
 

@@ -99,7 +99,8 @@
   background: linear-gradient(235deg, #84a75d, #28376e, #10a1b4);
 }
 .groove .lista {
-    padding-left: 50px;
+    padding-left: 50px; 
+    list-style-type: square;
 }
 .groove #depression {
     margin-left: 10px;

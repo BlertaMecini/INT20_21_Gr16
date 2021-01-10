@@ -36,15 +36,17 @@ article
 { 
     
     padding:  2% 5%;
-    font-size: 60px; 
+    font-size: 60px;  
+    text-shadow: 10px 10px 6px #bdb5b5;  
+    word-wrap:break-word; 
 }
 
 .section1 p 
 {  
-   
+   font-size: 21px;
     padding-left: 5%;
     padding-right: 5%;
-   line-height: 20px;
+line-height: 30px;
 
 }
 
@@ -139,3 +141,82 @@ hr
     border-style:ridge; 
     border-color: rgb(191, 216, 216); 
 }
+
+
+
+
+
+.table 
+{ 
+    max-width: 100%; 
+    height:auto; 
+    margin: 2%; 
+    padding: 2%;   
+    font-size: 20px;  
+   
+}
+
+.table a 
+{ 
+    text-decoration: none;
+}
+
+table {
+    font-family: arial, sans-serif;
+    width: 100%; 
+    margin-top: 2%;  
+    outline: #a1bda2 solid 10px; 
+    outline-offset: 5px;
+}
+ 
+  th {
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px; 
+    background-color:rgb(191, 216, 216);
+  }
+  td { 
+    border: 1px solid #000000;
+    text-align: left;
+    padding: 8px; 
+
+  }
+
+#button1,#button2,#button3,#button4,#button5,#button6
+{ 
+    padding: 1%; 
+    font-size: 20px;  
+    margin: 2%; 
+    background-color:rgb(191, 216, 216);  
+    border-image:url(/images/border.png) 30% round;
+    cursor: pointer;
+
+}
+   
+.organize 
+{ 
+    background-color: whitesmoke; 
+}
+ .relax 
+ { 
+    background-color:white;
+  }
+
+.activities 
+{ 
+    background-color:whitesmoke
+}
+
+#routine, #declutter, #meditate, #nature, #service, #exercise 
+{ 
+    font-size: 20px; 
+    padding-left: 3%;
+}
+
+
+#exercise img { 
+    margin-bottom: 2%; 
+}
+
+
+

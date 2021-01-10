@@ -2,18 +2,23 @@
 <html> 
     <head> 
       <!-- External links, scripts and metadata-->
+
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
         <link href="styles/homepage-styles.css" rel="stylesheet" type="text/css">
         <link href="styles/header-style.css" rel="stylesheet" type="text/css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="/scripts/time.js"> </script>
         <meta charset="utf-8"> 
        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-       <meta name="Description" content="This page is created by a group of students trying to raise mental health awareness. In this page you'll find things like: mental health problems, activities that help you manage mental disorders and much more. Have fun scrolling!"> 
-     <title> Mental Health And Wellbeing | Homepage</title>    <!--Web page's title-->
+       <meta name="description" content="This page is created by a group of students trying to raise mental health awareness. In this page you'll find things like: mental health problems, activities that help you manage mental disorders and much more. Have fun scrolling!"> 
+     
+      <title> Mental Health And Wellbeing | Homepage</title>    <!--Web page's title-->
     </head>
 
-<body> 
-<header>
+
+    <body >
+    
+      <header>
   <!--Start of navbar-->
     <nav> 
       
@@ -23,6 +28,7 @@
         <label for="check" class="check-button"> 
             <i class="fas fa-bars"> </i>
         </label>
+
         <ul>    
             <li><a class="active" href="homepage.html">Home</a></li>
             <li><a href="learn-about-mental-disorders.html">Learn about mental disorders</a></li>
@@ -30,20 +36,19 @@
             <li><a href="faq.html">faq </a></li>
             <li><a href="contact.html">Contact us</a></li>
             <button id="login-btn" onclick="location.href='login.html';">Log in</button> </a> 
-          
-            
         </ul>
+
     </nav> <!--End of navbar-->
-    </header>
+       </header>
 
      <!--Back to top button-->
 
      <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fas fa-angle-double-up"></i></button>  
      <script> 
-                //Get the button
+                //Get the button by id
                 var mybutton = document.getElementById("myBtn");
                 
-                // When the user scrolls down 20px from the top of the document, show the button
+                // When we scrolls down 20px from the top of the document, show the button
                 window.onscroll = function() {scrollFunction()};
                 
                 function scrollFunction() {
@@ -54,13 +59,23 @@
                   }
                 }
                 
-                // When the user clicks on the button, scroll to the top of the document
+                // When we click on the button, scroll to the top of the document
                 function topFunction() {
                   document.body.scrollTop = 0;
                   document.documentElement.scrollTop = 0;
                 }
               </script>
-  
+
+        <!--Displaying time-->
+     <div class="show-time" style="text-align:right; font-family: monospace; font-size: 18px; background-color: rgb(235, 246, 247);">
+      <p style="margin-right:2%; margin-top: 1%;">Current Time:</p>
+      <div id="time" style="margin-right:3%;" ></div> 
+
+      <!--Geolocation-->
+      <div class="showposition" style="margin: 0 2%;" > 
+        <button  onclick=" window.open('geolocation.html','_blank')" title="Get Location"> Show My Location</button>
+       </div>
+    </div> 
 
     <!--Images slideshow-->
     <div class="slideshow-section"> 
@@ -107,7 +122,7 @@
                       var slides = document.getElementsByClassName("mySlides");
                       var dots = document.getElementsByClassName("dot");
                       if (n > slides.length) {slideIndex = 1}    
-                      if (n < 1) {slideIndex = slides.length}
+                      if (n < 1) {slaideIndex = slides.length}
                       for (i = 0; i < slides.length; i++) {
                           slides[i].style.display = "none";  
                       }
@@ -119,6 +134,7 @@
                     }
                     </script>
 
+<!--Box section with general information about mental health-->
 <div class="box-section">
 
 <div id="box1" class="box">
@@ -139,7 +155,7 @@
 
 <div id="box2" class="box">
   <p><h3>Influences on mental health</h3><br>  
-    Mental health is influenced by biological, psychological, social and environmental factors which interact in complex ways. Ex:
+    Mental health is influenced by biological, psychological, social and environmental factors which interact in complex ways. <abbr>Ex:</abbr>
  
   <ol id="list2"> 
   <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Structural factors such as safe living environments, education, freedom from violence, and access to economic resources</mark></li> <br> 
@@ -182,7 +198,7 @@
 </div>
 
 
-
+<!--Quote Section with image -->
 <div class="quote-section"> 
 
   <div class="myquote"> 
@@ -194,19 +210,20 @@
     
     </div>
   </div>
- <a href="https://mentalhealthmatch.com/articles/anxiety/inspiring-mental-health-quotes" target="_blank" class="shiny-button" onclick="confirmfunc()"> 
+ <a href="https://mentalhealthmatch.com/articles/anxiety/inspiring-mental-health-quotes" target="_blank" class="shiny-button" onclick=confirmalert()"> 
   View more quotes...</a>
   <img  id="rainimg" src="/images/2632949.jpg" alt="girl in rain">
 </div>
 
 <script>  
 
-function confirmfunc()
+function confirmalert()
 { 
-    alert("Press OK if you want to continue to this site.")
+    alert("Press OK to continue to this site.")
 }
 </script>
 
+<!-- Our Team Section -->
 <section class="team-section">
   <h1 class="title">Our Team</h1> 
   <div class="team-row"> 
@@ -290,19 +307,13 @@ function confirmfunc()
 
 </section>
 
-
-
-
-
-
-
-
-
+<!--Footer of our Webpage-->
     <footer> 
+      <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> ,Mental Health and Wellbeing. All Rights Reserved.</p>
       
-            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> ,Mental Health and Wellbeing. All Rights Reserved.</p>
-           
     </footer>
+
+        
 </body>
 
 </html>
