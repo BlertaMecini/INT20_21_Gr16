@@ -165,12 +165,175 @@ nav ul li a:hover, nav ul li a.active
     background-color: #bbb;
   } 
   
+  
+    .footer{
+	background: rgb(10, 126, 126);
+	width: 100%;
+	font: bold 16px sans-serif;
+	text-align: left;
+    overflow: hidden; 
+	 margin-top: auto; 
+	 padding:1%; 
+    }
 
-  footer
-  {
-    text-align: center;
-    background: rgb(10, 126, 126); 
-    padding: 20px; 
-    margin-top: auto;
-   } 
+
+
+
+.footer .footer-left{
+	float: left;
+    }
+
+
+
+#mental-health{
+	color:  #000000;
+	font: normal 34px 'Roboto', cursive;
+	margin: 2% ;
+}
+
+
+.footer .footer-links{
+	color:  #ffffff;
+	margin: 3% 0;
+	padding: 0;
+  text-transform: uppercase;
+}
+
+.footer .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer .footer-copyrights{
+	color:  #000000;
+	font-size: 16px;
+	font-weight: normal;
+	margin-top: 8%;
+}
+
+
+.footer .footer-icons{
+	margin-top: 3%;
+}
+
+.footer .footer-icons a{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 4px;
+	font-size: 25px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+	margin-right: 3px;
+}
+
+
+.footer .footer-right{
+	float: right;
+}
+
+.footer .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 15px 42px 0 0;
+	color: #ffffff;
+}
+
+.footer form{
+	display: inline-block;
+}
+
+.footer form input,
+.footer form textarea{
+	display: block;
+	border-radius: 3px;
+	background-color:  #1f2022;
+	box-shadow: 0 2px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: both;
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	color:  #d1d2d2;
+	width: 400px;
+	padding: 18px;
+}
+
+
+.footer form input{
+	height: 55px;
+	margin-bottom: 15px;
+}
+
+.footer form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+}
+
+#submit-button {
+	border-radius: 3px;
+	background-color:  #33383b;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 50px;
+	font-weight: bold;
+	float: right;
+}
+
+@media (max-width: 1200px) {
+
+	.footer {
+		font: bold 14px sans-serif;
+	}
+
+	.footer .footer-copyrights{
+		font-size: 12px;
+	}
+
+	.footer form input,
+	.footer form textarea{
+		width: 250px;
+	}
+
+	#submit-button {
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 950px) {
+
+	.footer{
+		padding: 30px;
+	}
+
+	.footer .footer-left,
+	.footer .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer .footer-left{
+		margin-bottom: 40px;
+	}
+
+	.footer form{
+		margin-top: 30px;
+	}
+
+	.footer form{
+		display: block;
+	}
+
+	#submit-button{
+		float: none;
+	}
+}
+
 
