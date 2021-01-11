@@ -187,9 +187,21 @@ $(document).ready(function(){
 <table> 
     <caption>Things to do during lockdown</caption>
   <tr>
-    <th>Organize</th>
-    <th>Relax</th>
-    <th>Do Activities</th>
+    <th><svg width="25" height="25">
+      <circle cx="15" cy="15" r="5"
+      stroke="red" stroke-width="2" fill="white" />
+    Sorry, your browser does not support inline SVG.
+    </svg>Organize</th>
+    <th><svg width="15" height="15">
+      <rect x="0" y="0" rx="5" ry="5" width="15" height="15"
+      style="fill:white;stroke:red;stroke-width:5;opacity:1" />
+    Sorry, your browser does not support inline SVG.
+    </svg> Relax</th>
+    <th><svg width="25" height="25">
+      <circle cx="15" cy="15" r="5"
+      stroke="red" stroke-width="2" fill="white" />
+    Sorry, your browser does not support inline SVG.
+    </svg>Do Activities</th>
   </tr>
   <tr>
     <td><a href="#button1">Have a routine (as much as you can)</a></td>
@@ -260,6 +272,7 @@ $(document).ready(function(){
 </div> 
 
 
+  
   <!--Footer-->
 
   <footer class="footer">
@@ -290,10 +303,15 @@ $(document).ready(function(){
         </div>
   
     </div>
+
+
   
     <div class="footer-right">
-  
-        <p>Leave Feedback</p>
+    
+      <canvas id="mycanvas" width="80" height="70"
+      style="border:2px solid #ffffff; margin-right:10px;">
+  Canvas is not supported on your browser.
+</canvas>
   
         <form name="contact_form" onSubmit="return validate_form ( );"> 
         
@@ -303,30 +321,9 @@ $(document).ready(function(){
         </form>
   
     </div>
+    <script src="scripts/footer.js"></script>
   </footer>
 
-  <script>
-    
-    function validate_form ( )
-    {
-        valid = true;
-    
-        if ( document.contact_form.email.value == "" )
-        {
-            alert ( "Please enter your email!" );
-            valid = false;
-        }
-        if ( document.contact_form.message.value == "" )
-        {
-            alert ( 'Please fill the "Leave a Message" box!');
-            valid = false;
-        }
-    else 
-    { 
-        alert("Thank you for leaving feedback!");
-    } 
-}
-    </script>
 
 </body>
 </html>

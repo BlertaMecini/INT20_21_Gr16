@@ -250,16 +250,32 @@ table {
    
 .organize 
 { 
-    background-color: whitesmoke; 
+  animation: change 5s infinite;
 }
  .relax 
  { 
-    background-color:white;
+  animation: changebg 5s infinite;
   }
-
+  @keyframes changebg{
+    0%{background:#6b96b9;}
+    25%{background:#90b3cf;}
+    50%{background:#a8bdce;}
+    75%{background:#d5e3ee;}
+    100%{background:#ffffff;}   
+   
+  }
+  
 .activities 
 { 
-    background-color:whitesmoke
+   
+    animation: change 5s infinite;
+}
+@keyframes change{
+  0%{background:#ffffff;}   
+  25%{background:#d5e3ee;}
+  50%{background:#a8bdce;}
+  75%{background:#90b3cf;}
+  100%{background:#6b96b9;}
 }
 
 #routine, #declutter, #meditate, #nature, #service, #exercise 

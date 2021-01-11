@@ -40,9 +40,10 @@
 
 <script src="scripts/change-bg-color.js"></script>
 
-<!--Footer-->
 
-<footer class="footer">
+  <!--Footer-->
+
+  <footer class="footer">
     <div class="footer-left">
         <h3 id="mental-health">Mental Health and Wellbeing</h3>
   
@@ -70,10 +71,15 @@
         </div>
   
     </div>
+
+
   
     <div class="footer-right">
-  
-        <p>Leave Feedback</p>
+    
+      <canvas id="mycanvas" width="80" height="70"
+      style="border:2px solid #ffffff; margin-right:10px;">
+  Canvas is not supported on your browser.
+</canvas>
   
         <form name="contact_form" onSubmit="return validate_form ( );"> 
         
@@ -83,30 +89,9 @@
         </form>
   
     </div>
+    <script src="scripts/footer.js"></script>
   </footer>
 
-  <script>
-    
-    function validate_form ( )
-    {
-        valid = true;
-    
-        if ( document.contact_form.email.value == "" )
-        {
-            alert ( "Please enter your email!" );
-            valid = false;
-        }
-        if ( document.contact_form.message.value == "" )
-        {
-            alert ( 'Please fill the "Leave a Message" box!');
-            valid = false;
-        }
-    else 
-    { 
-        alert("Thank you for leaving feedback!");
-    }
-}
-    </script>
 
 </body>
 </html>

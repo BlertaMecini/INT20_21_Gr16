@@ -195,73 +195,59 @@
     });
   });
 </script>
-<!--Footer-->
 
-<footer class="footer">
-  <div class="footer-left">
-      <h3 id="mental-health">Mental Health and Wellbeing</h3>
+  <!--Footer-->
 
-      <p class="footer-links">
-          <a href="homepage.html">Home</a>
-          ·
-          <a href="learn-about-mental-disorders.html">Learn about mental disorders</a>
-          ·
-          <a href="get-help.html">Get help</a>
-          ·
-          <a href="faq.html">Faq</a>
-          ·
-          <a href="contact.html">Contact us</a>
-      </p>
-
-      <p class="footer-copyrights">Copyright &copy; <script>document.write(new Date().getFullYear());</script> ,Mental Health and Wellbeing. All Rights Reserved.</p>
-
-      <div class="footer-icons">
-
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-github"></i></a>
-
-      </div>
-
-  </div>
-
-  <div class="footer-right">
-
-      <p>Leave Feedback</p>
-
-      <form name="contact_form" onSubmit="return validate_form ( );"> 
-      
-        <input type="text" name="email" placeholder="Enter your email">
-        <textarea name="message" placeholder="Leave a message"></textarea>
-        <input type="submit" value="Send" id="submit-button">
-      </form>
-
-  </div>
-</footer>
-
-<script>
+  <footer class="footer">
+    <div class="footer-left">
+        <h3 id="mental-health">Mental Health and Wellbeing</h3>
   
-  function validate_form ( )
-  {
-      valid = true;
+        <p class="footer-links">
+            <a href="homepage.html">Home</a>
+            ·
+            <a href="learn-about-mental-disorders.html">Learn about mental disorders</a>
+            ·
+            <a href="get-help.html">Get help</a>
+            ·
+            <a href="faq.html">Faq</a>
+            ·
+            <a href="contact.html">Contact us</a>
+        </p>
   
-      if ( document.contact_form.email.value == "" )
-      {
-          alert ( "Please enter your email!" );
-          valid = false;
-      }
-      if ( document.contact_form.message.value == "" )
-      {
-          alert ( 'Please fill the "Leave a Message" box!');
-          valid = false;
-      }
-  else 
-  { 
-      alert("Thank you for leaving feedback!");
-  }
-}
-  </script>
+        <p class="footer-copyrights">Copyright &copy; <script>document.write(new Date().getFullYear());</script> ,Mental Health and Wellbeing. All Rights Reserved.</p>
+  
+        <div class="footer-icons">
+  
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+  
+        </div>
+  
+    </div>
+
+
+  
+    <div class="footer-right">
+    
+      <canvas id="mycanvas" width="80" height="70"
+      style="border:2px solid #ffffff; margin-right:10px;">
+  Canvas is not supported on your browser.
+</canvas>
+  
+        <form name="contact_form" onSubmit="return validate_form ( );"> 
+        
+          <input type="text" name="email" placeholder="Enter your email">
+          <textarea name="message" placeholder="Leave a message"></textarea>
+          <input type="submit" value="Send" id="submit-button">
+        </form>
+  
+    </div>
+    <script src="scripts/footer.js"></script>
+  </footer>
+
+
 
 </body>
 </html>
