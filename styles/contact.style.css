@@ -1,0 +1,46 @@
+
+        .box{
+        background-color: rgb(101, 113, 180);
+        width: 1400px;
+        height: 180px;
+        float:left;
+        margin-top: 30px;
+        padding:30px;}
+    h1{
+        margin-top: 10px;
+        margin-left: 565px;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+        font-family:serif;
+    }
+    p2{
+        margin-left: 300px;
+        font-size: 25px;
+        color:rgb(255, 255, 255);
+        font-family:cursive;
+    }
+    div {
+        text-align: left;
+        margin: 45px;
+    }
+    mark {
+        -webkit-text-fill-color:rgb(43, 90, 161);
+        background-color: rgb(199, 204, 202);
+    }
+    p1 {
+        margin-left: 45px;
+        font-size: 40px;
+        -webkit-text-fill-color:rgb(43, 91, 131);
+
+    }
+    p {
+    margin-left: 45px;
+    font-size: 20px;
+    -webkit-text-fill-color:rgb(43, 91, 131);
+
+}
+body {
+    background-color: rgb(199, 204, 202);
+    
+}
+
