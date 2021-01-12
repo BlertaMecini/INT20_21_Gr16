@@ -1,7 +1,7 @@
 
         .box{
-        background-color: rgb(101, 113, 180);
-        width: 1400px;
+        background-color: rgb(99, 123, 160);
+        width: 1500px;
         height: 180px;
         float:left;
         margin-top: 30px;
@@ -41,6 +41,39 @@
 }
 body {
     background-color: rgb(199, 204, 202);
-    
 }
 
+.atlasi {
+      width: 100%;
+      position: absolute;
+      height: 300px;
+      margin-left: 800px;
+}
+
+#image_atlasi {
+    width: 45%;
+    height: 300px;
+}
+div.rotate_right {
+  float: left;
+  -ms-transform: rotate(7deg); 
+  -webkit-transform: rotate(7deg);
+  transform: rotate(7deg);
+  margin-left: 300px;
+}
+
+div.rotate_left {
+  float: left;
+  -ms-transform: rotate(-8deg); 
+  -webkit-transform: rotate(-8deg); 
+  transform: rotate(-8deg);
+}
+.top-left {
+    position: absolute;
+    top: 460px;
+    left: 860px;
+    color: rgb(43, 91, 131);
+    font-size: 35px;
+    font-family:cursive;
+  }
+  
