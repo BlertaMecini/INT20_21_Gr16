@@ -271,6 +271,34 @@ $(document).ready(function(){
 </p>
 </div> 
 
+<div class="breaths-counter"> 
+  <p>Now before you leave the page I'm asking you to forget about everything for a while. Just take some deep breaths! 
+    <br><br> With each deep breath you take, click the button below!
+    <br>Let's see how many deep breaths you take as long as you are visiting our web page. 
+  </p>
+  <br>
+  <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+
+</div>
+
+<script>
+ function clickCounter() {
+  if (typeof(Storage) !== "undefined") {
+    if (sessionStorage.clickcount) {
+      sessionStorage.clickcount = Number(sessionStorage.clickcount)+1;
+    } else {
+      sessionStorage.clickcount = 1;
+    }
+    document.getElementById("result").innerHTML = "You have clicked the button " + sessionStorage.clickcount + " time(s) in this session.";
+  } else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+  }
+}
+  </script>
+
+
+
 
   
   <!--Footer-->
