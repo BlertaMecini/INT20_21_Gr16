@@ -313,10 +313,10 @@ $(document).ready(function(){
   Canvas is not supported on your browser.
 </canvas>
   
-        <form name="contact_form" onSubmit="return validate_form ( );"> 
+<form name="contact_form" onsubmit="return validate_form()"> 
         
           <input type="text" name="email" placeholder="Enter your email">
-          <textarea name="message" placeholder="Leave a message"></textarea>
+          <textarea name="message" id="message" placeholder="Leave a message"></textarea>
           <input type="submit" value="Send" id="submit-button">
         </form>
   

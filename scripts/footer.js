@@ -1,21 +1,42 @@
+
+
+function validate_form() {
+
+    var x = document.forms["contact_form"]["email"].value;
+    if (x == "") {
+      alert("Email must be filled out!");
+      return false;
+    }
+
+    var z = document.forms["contact_form"]["email"].value;
+    var atpos=z.indexOf("@");
+    var dotpos=z.lastIndexOf(".");
+    if (atpos<0 || dotpos<atpos+1 || dotpos+1>=z.length)
+      {
+      alert("This is not a valid email!");
+      return false; 
+    } 
+
+  var textbox = document.getElementById("message").value;
+
+  if (textbox == "") {
+    alert("Please fill the 'leave a message' box!");
+    return false; 
+      } 
+  else  if(textbox.length <=10){
+
+        alert("Make sure the input text is more than 10 characters long!");
+        return false; 
+    } 
     
-function validate_form ( )
-{
-    if ( document.contact_form.email.value == "" )
-    {    valid = false;
-        alert ( "Please enter your email!" );
-      
+    else 
+    {
+    alert("Thank you for leaving feedback!")
+    return true ; 
     }
-    if ( document.contact_form.message.value == "" )
-    {  valid = false;
-        alert ( 'Please fill the "Leave a Message" box!');
-      
-    }
-else 
-{  valid=true;
-    alert("Thank you for leaving feedback!");
-} 
 }
+
+
 
 
 var c = document.getElementById("mycanvas");
