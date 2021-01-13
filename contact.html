@@ -1,17 +1,31 @@
 
 <!DOCTYPE html>
 <html>
+
     <head>
         <meta charset="utf-8">
 <title> Mental Health And Wellbeing | Contact Us </title>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet"> 
 <link href="styles/header-style.css" rel="stylesheet" type="text/css">
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-<link rel="stylesheet" href="contact.style.css">
+
+  <link rel="stylesheet" href="contact.style.css">
+  <script src="lib/script.js"></script>
+  <!--<script>
+    function myFunction() {
+      alert("Na keni kontaktuar me sukses!");
+    }
+    function FunksioniIm() {
+      alert("Pyetja apo sugjerimi juaj eshte derguar me sukses, ju faleminderit!");
+    }
+  </script>-->
+
 </head>
+
 <body>
 
-  <header>
+
+<header>
     <!--Start of navbar-->
       <nav> 
         
@@ -33,52 +47,84 @@
           </ul>
       </nav> <!--End of navbar-->
 
-    <div 
-              id="box1"  class="box">
-              <h1> <b>CONTACT US</b></h1>
-              <br />
-              <p2>We're always here for you. Get in touch with us using the forms below!  </p2>
-     </div>
-     
-     
+  <div id="box1" class="box">
+    <h1> <b>CONTACT US</b></h1>
+    <br />
+    <p2>We're always here for you. Get in touch with us using the forms below! </p2>
+  </div>
 
-<p1> <strong>HELPING YOU IS OUR PLEASURE!</strong></p1>
 
-<div> If you have questions then take a look at our <mark>FAQ</mark> (frequently asked questions), perhaps it can help you.
-      But if you still didn't get your answers, do not hesitate to contact us by answering these questions below and by filling out the form below.
-      It would be our pleasure to help!
 
-<h3> What is your question related to?</h3>
+  <p1> <strong>HELPING YOU IS OUR PLEASURE!</strong></p1>
 
-<form>
-    <input type="radio" id="quest1" name="quest1" value="quest1">
-    <label for="quest">Need staff assistance</label><br>
-    <input type="radio" id="quest2" name="quest2" value="quest2">
-    <label for="female">Registration to HealthMental</label><br>
-    <input type="radio" id="quest3" name="quest3" value="quest3">
-    <label for="quest">I have a business-related inquiry</label><br />
-    <input type="radio" id="quest4 " name="quest4" value="quest4">
-    <label for="quest">Other requests</label><br />
-  </form> 
-  <br />
-  <form>
-    <label for="username">Name:</label><br>
-    <input type="text" id="username" name="username"><br>
-    <label for="surname">Surname:</label><br>
-    <input type="text" id="surname" name="surname"><br><br>
-    <input type="submit" value="Submit">
-  </form>
-      
-</div>
+  <div> If you have questions then take a look at our <mark>FAQ</mark> (frequently asked questions), perhaps it can help
+    you.
+    But if you still didn't get your answers, do not hesitate to contact us by answering these questions below and by
+    filling out the form below.
+    It would be our pleasure to help!
+    <br />  <br />
+    <form class="boxes">
+      <label for="username">Name:</label><br>
+      <input type="text" placeholder="Enter your name" id="username" name="username" required><br>
+      <label for="surname">Surname:</label><br>
+      <input type="text" placeholder="Enter your surname" id="surname" name="surname" required><br />
+      <label for="Adress">Email:</label><br>
+      <input type="email" placeholder="Enter your email" id="email" required /><br />
+      <label for="address">Address:</label><br>
+      <input type="text" placeholder="Enter your address" id="address" required /> <br />
+      <label for="Date">Date:</label><br>
+      <input type="date" placeholder="Enter today's date" required> <br /><br />
 
-<p> <strong>WE ARE ALWAYS HERE FOR YOU</strong></p>
-<div>In case if you need more information about mental health services that may be
-    available to you, please call us on +38349288987 or email <a href="mailto:mentalhealthstaff.outlook.com">HealthMentalStaff.</a> 
-    <br /> <hr />
-    <pdiv>Also if needed, now you can you can now send your texts through to +38349223111.  </div>
-</div>
+      <select id="country">
+        <option disabled selected value> select your country </option>
+        <option value="Kosovo">Kosovo</option>
+        <option value="Albania">Albania</option>
+        <option value="Montenegro">Montenegro</option>
+        <option value="North Macedonia">North Macedonia</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Italy">Italy</option>
+        <option value="Turkey">Turkey</option>
+      </select>
+      <br><br>
+      <label for="Gender">Gender:</label><br />
+      <input type="radio" id="male" name="gender" value="male"> Male
+      <input type="radio" id="female" name="gender" value="female"> Female<br><br>
+      <button onclick="myFunction()" aria-required="true">Submit</button>
+      <br /><br />
 
-  
+      <span>What is your question?</span>
+      <br>
+      <textarea id="question" rows="4"></textarea>
+      <br><br>
+      <button onclick="FunksioniIm()">Send</button>
+      <br><br>
+    </form>
+
+  </div>
+
+
+  <p> <strong>WE ARE ALWAYS HERE FOR YOU</strong></p>
+  <div>In case if you need more information about mental health services that may be
+    available to you, just email <a href="mailto:mentalhealthstaff.outlook.com">HealthMentalStaff.</a>
+    <br />
+    <hr />
+    Also if needed, now you can you can now send your texts through to +38349288987.
+  </div>
+
+
+  <div class="harta">
+
+    <span><B><u>Our location:</u><b></span><br>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.5926651604004!2d21.164962015312987!3d42.648794624811245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ec1b6ecb2c1%3A0x7f0893730efce187!2sFakulteti%20Teknik!5e0!3m2!1sen!2s!4v1610324418646!5m2!1sen!2s"
+      width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+  </div>
+
+
+
+    
   <!--Footer-->
 
   <footer class="footer">
@@ -119,18 +165,16 @@
   Canvas is not supported on your browser.
 </canvas>
   
-        <form name="contact_form" onSubmit="return validate_form ( );"> 
+<form name="contact_form" onsubmit="return validate_form()"> 
         
           <input type="text" name="email" placeholder="Enter your email">
-          <textarea name="message" placeholder="Leave a message"></textarea>
+          <textarea name="message" id="message" placeholder="Leave a message"></textarea>
           <input type="submit" value="Send" id="submit-button">
         </form>
   
     </div>
     <script src="scripts/footer.js"></script>
   </footer>
-
-    
 </body>
-</html>
 
+</html>

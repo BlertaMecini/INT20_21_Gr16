@@ -291,3 +291,31 @@ table {
 
 
 
+.breaths-counter 
+{ 
+  margin: 4%; 
+  font-size:22px;
+  text-align: center;
+  font-family: cursive;  
+}
+
+.breaths-counter button 
+{ 
+  padding: 10px; 
+  border-radius: 10%;
+  font-size: 15px; 
+  font-weight:bold; 
+  color: #ffffff;
+  background-color: rgb(140, 141, 141);
+}
+
+.breaths-counter button:hover 
+{ 
+  transform: scale(1.2);
+}
+
+#result 
+{ 
+  font-size: 20px;
+  color:red;  
+}

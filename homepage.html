@@ -8,6 +8,8 @@
         <link href="styles/header-style.css" rel="stylesheet" type="text/css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
         <script src="/scripts/time.js"> </script>
+        
+
         <meta charset="utf-8"> 
        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
        <meta name="description" content="This page is created by a group of students trying to raise mental health awareness. In this page you'll find things like: mental health problems, activities that help you manage mental disorders and much more. Have fun scrolling!"> 
@@ -50,7 +52,12 @@
         <!--Displaying time-->
      <div class="show-time" style="text-align:right; font-family: monospace; font-size: 18px; background-color: rgb(235, 246, 247);">
       <p style="margin-right:2%; margin-top: 1%;">Current Time:</p>
-      <div id="time" style="margin-right:3%;" ></div> 
+      <div id="time" style="margin-right:3%;" ></div>
+      <div class="day-button" style="float:right;">
+        <button  onclick="weekday()"
+        style="padding:5px; background-color: inherit; border-radius:10px;cursor: pointer;"> Show Day</button>
+        <p id="day"></p>
+      </div>
 
       <!--Geolocation-->
       <div class="showposition" style="margin: 0% 2%;" > 
@@ -329,10 +336,10 @@ function confirmalert()
   Canvas is not supported on your browser.
 </canvas>
   
-        <form name="contact_form" onSubmit="return validate_form ( );"> 
+<form name="contact_form" onsubmit="return validate_form()"> 
         
           <input type="text" name="email" placeholder="Enter your email">
-          <textarea name="message" placeholder="Leave a message"></textarea>
+          <textarea name="message" id="message" placeholder="Leave a message"></textarea>
           <input type="submit" value="Send" id="submit-button">
         </form>
   
@@ -341,8 +348,6 @@ function confirmalert()
   </footer>
 
 
-
-        
 </body>
 
 
