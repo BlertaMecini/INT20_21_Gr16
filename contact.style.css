@@ -1,56 +1,61 @@
 
-      body {
-        background-image:url(https://images.squarespace-cdn.com/content/v1/566a95f005f8e21867bf15a3/1474865501968-S4WWKWMY2EP9OBL8SV77/ke17ZwdGBToddI8pDm48kFWxnDtCdRm2WA9rXcwtIYR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcTSrQkGwCGRqSxozz07hWZrYGYYH8sg4qn8Lpf9k1pYMHPsat2_S1jaQY3SwdyaXg/contact-us-background-darker-1500x1000.jpg?format=1500w);
-  
+     body 
+    {
+        background-image:url(https://files.oyebesmartest.com/uploads/preview/fog-overlacz5.jpeg);
         height: 100%; 
-
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     
     }
-      .box{
-        background-color: rgb(58, 49, 49);
+    .box
+    {
+        background-color: rgb(128, 138, 136);
         width: 90%;
         height: 180px;
         float:left;
         margin-left: 5%;
         margin-top: 30px;
     }
-    h1{
+    h1
+    {
         margin-top: 10px;
         margin-left: 565px;
-        color: #316868;
+        color: #495252;
         font-size: 50px;
-        font-family:serif;
-    }
-    p2{
-        margin-left: 300px;
-        font-size: 25px;
-        color:rgb(255, 255, 255);
         font-family:cursive;
     }
-    div {
+    p2
+    {
+        margin-left: 300px;
+        font-size: 25px;
+        color:#495252;
+        font-family:cursive;
+    }
+    div 
+    {
         text-align: left;
         margin: 45px;
     }
-    mark {
-        -webkit-text-fill-color:#316868;
-        background-color: rgb(58, 56, 56);
+    mark 
+    {
+        -webkit-text-fill-color:#495252;
+        background-color: rgb(128, 138, 136);
     }
-    p1 {
+    p1 
+    {
         margin-left: 45px;
         font-size: 40px;
-        -webkit-text-fill-color:#316868;
-
+        -webkit-text-fill-color:rgb(66, 85, 81);
+        
     }
-    p {
-    margin-left: 45px;
-    font-size: 20px;
-    -webkit-text-fill-color:#316868;
-
-}
-
+    p
+    {
+            margin-left: 45px;
+            font-size:20px;
+            -webkit-text-fill-color:rgb(128, 138, 136);
+    }
+    
 .container {
     width: 400px;
     height: 40px;
@@ -79,7 +84,6 @@
     height: 300px;
     margin-left: 300px;
 }
-
 #image_atlasi {
   width: 25%;
   height: 300px;
@@ -90,11 +94,8 @@
    top: 0;
    margin-left: 59%;
    margin-top: 30%;
-   
    height: 300px;
-   
 }
-
 .harta span{
     color: rgb(60, 124, 110);
     padding: 29px;
@@ -107,4 +108,69 @@
 .harta iframe{
     margin-top: 7%;
 }
-  
+.boxes
+{ 
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    max-width: 500px;
+    background: rgb(128, 138, 136);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-112.7%, -3.5%);
+    padding: 10px 40px;
+    box-sizing:border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    font-family: "Montserrat", sans-serif;
+}
+.txtb{
+    border: 1px solid rgb(49, 54, 53);
+    margin: 8px 0;
+    position: relative;
+    padding: 12px 18px;
+    border-radius: 8px;
+    align-items: center;
+    text-align: center;
+}
+.txtb label{
+    display: block;
+    text-align: left;
+    color: rgb(55, 83, 64);
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.txtb input,.txtb textarea{
+    width: 100%;
+    border:none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+.btn1{
+    display: inline-block;
+    background: #2a3636;
+    padding: 14px 0;
+    color: rgb(139, 155, 144);
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 8px;
+}
+.btn2{
+    display: inline-block;
+    background: #2a3636;
+    padding: 14px 0;
+    color: rgb(139, 155, 144);
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+    
