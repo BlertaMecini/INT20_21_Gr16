@@ -190,6 +190,30 @@ hr
     border-color: rgb(191, 216, 216); 
 }
 
+.quote-container
+{ 
+  background-color: #9bbac2;
+  border: 5px solid #f5e4c3; 
+  height: auto; 
+  max-width: 60%; 
+  margin :3% auto; 
+  text-align: center; 
+
+}
+#btn 
+{ 
+  margin: 4% auto; 
+  padding:1.3%;  
+  font-size: 20px; 
+  background-color: #f5e4c3;
+}
+
+#output 
+{ 
+  margin: 3%;  
+  font-size: 22px; 
+  color: white;
+}
 
 #multiple-columns {
 column-count: 3;
