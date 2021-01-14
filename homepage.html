@@ -1,5 +1,5 @@
 <!DOCTYPE html> 
-<html> 
+<html manifest="cache.appcache"> 
     <head> 
       <!-- External links, scripts and metadata-->
 
@@ -7,12 +7,14 @@
         <link href="styles/homepage-styles.css" rel="stylesheet" type="text/css">
         <link href="styles/header-style.css" rel="stylesheet" type="text/css">
         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-        <script src="/scripts/time.js"> </script>
+        <script src="scripts/time.js"> </script>
         
 
-        <meta charset="utf-8"> 
+       <meta charset="utf-8"> 
        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-       <meta name="description" content="This page is created by a group of students trying to raise mental health awareness. In this page you'll find things like: mental health problems, activities that help you manage mental disorders and much more. Have fun scrolling!"> 
+       <meta name="description" content="This page is created by a group of students trying to raise mental health awareness. 
+       In this page you'll find things like: mental health problems, activities that help you manage mental disorders and much more.
+        Have fun scrolling!"> 
      
       <title> Mental Health And Wellbeing | Homepage</title>    <!--Web page's title-->
     </head>
@@ -24,9 +26,9 @@
   <!--Start of navbar-->
     <nav> 
       
-       <a id="mylogo"  href="homepage.html"><img src="/images/logo.png" alt="Website's logo."  id="logo"></a> 
+       <a id="logo"  href="homepage.html"><img src="images/logo.png" alt="Website's logo."></a> 
      
-      <input type="checkbox"  id="check" class="check">
+        <input type="checkbox"  id="check" class="check">
         <label for="check" class="check-button"> 
             <i class="fas fa-bars"> </i>
         </label>
@@ -35,9 +37,9 @@
             <li><a class="active" href="homepage.html">Home</a></li>
             <li><a href="learn-about-mental-disorders.html">Learn about mental disorders</a></li>
             <li><a href="get-help.html">Get help </a></li>
-            <li><a href="faq.html">faq </a></li>
+            <li><a href="faq.html">Faq </a></li>
             <li><a href="contact.html">Contact us</a></li>
-            <button id="login-btn" onclick="location.href='login.html';">Log in</button> </a> 
+            <button id="login-btn" onclick="location.href='login.html';">Log out</button> </a> 
         </ul>
 
     </nav> <!--End of navbar-->
@@ -111,7 +113,7 @@
                       var slides = document.getElementsByClassName("mySlides");
                       var dots = document.getElementsByClassName("dot");
                       if (n > slides.length) {slideIndex = 1}    
-                      if (n < 1) {slaideIndex = slides.length}
+                      if (n < 1) {slideIndex = slides.length}
                       for (i = 0; i < slides.length; i++) {
                           slides[i].style.display = "none";  
                       }
@@ -128,14 +130,15 @@
 
 <div id="box1" class="box">
   <p><h3>Defining mental health</h3><br>  
-     Mental health is a positive concept related to the <i>social and emotional wellbeing</i> of individuals and communities.
+     Mental health is a positive concept related to the <i>social and emotional wellbeing</i> 
+     of individuals and communities.
     The concept is influenced by culture, but it generally relates to:
   
    <ol id="list1"> 
    <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Enjoyment of life.</mark></li> <br> 
    <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Having the ability to cope with and ‘bounce back’ from stress and sadness.</mark></li> <br>
    <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Being able to set and fulfill goals.</mark></li> <br>
-    <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Having the capability to build and maintain relationships with others.</mark></li> <br>
+   <li><mark style="background-color:rgba(166, 255, 0, 0.479)">Having the capability to build and maintain relationships with others.</mark></li> <br>
   </ol>
     </p> <br> 
     <button class="clickme" onclick="location.href='learn-about-mental-disorders.html';" title="Read More">Read More</button>
@@ -196,12 +199,11 @@
     <div class="quote"> 
       <p>“Mental health problems don’t define who you are. They are something you experience. You walk in the rain and you feel the rain, but, importantly, YOU ARE NOT THE RAIN.” </p>
       <p> — Matt Haig</p>
-    
     </div>
   </div>
- <a href="https://mentalhealthmatch.com/articles/anxiety/inspiring-mental-health-quotes" target="_blank" class="shiny-button" onclick=confirmalert()"> 
+ <a href="https://mentalhealthmatch.com/articles/anxiety/inspiring-mental-health-quotes" target="_blank" class="shiny-button" onclick=confirmalert()> 
   View more quotes...</a>
-  <img  id="rainimg" src="/images/2632949.jpg" alt="girl in rain">
+  <img  id="rainimg" src="images/rain.jpg" alt="girl in rain">
 </div>
 
 <script>  
@@ -217,7 +219,7 @@ function confirmalert()
   <h1 class="title">Our Team</h1> 
   <div class="team-row"> 
     <div class="member"> 
-      <img class="memberimg" src="/images/blerta.jpg"> 
+      <img class="memberimg" src="images/blerta.jpg"> 
       <h2> Blerta Mecini </h2> 
       <p> Hi, I'm a 20 years old student of Computer Engineering. I live in Skënderaj. Through this project I'm trying to raise 
         mental health awareness in our community!
@@ -233,7 +235,7 @@ function confirmalert()
 
 
     <div class="member"> 
-      <img class="memberimg" src="/images/diana.jpg"> 
+      <img class="memberimg" src="images/diana.jpg"> 
       <h2> Diana Beqiri </h2> 
       <p> I'm Diana, student of Computer Engineering. I live in Skënderaj. My goal is to help everyone that lacks information about mental health and wellbeing!
       </p>
@@ -247,7 +249,7 @@ function confirmalert()
     </div>
 
     <div  class="member"> 
-      <img  class="memberimg" src="/images/betimi.jpg "> 
+      <img  class="memberimg" src="images/betimi.jpg "> 
       <h2> Betim Dinaj </h2> 
       <p> Hey all! I'm Betim Dinaj, an ambitious guy. I'm currently studying Computer Engineering. My advice to you is: <br> 
         "You can do anything you set your mind to!"
@@ -262,7 +264,7 @@ function confirmalert()
     </div>
 
     <div  class="member"> 
-      <img  class="memberimg" src="/images/qendrimi.jpg"> 
+      <img  class="memberimg" src="images/qendrimi.jpg"> 
       <h2> Qendrim Gashi </h2> 
       <p>My name is Qendrim Gashi. I live in Peja and currently I'm studying Computer Engineering at University of Prishtina. 
       This is my motto: “A life with a goal is a life that is whole.” 
@@ -278,7 +280,7 @@ function confirmalert()
 
 
     <div class="member"> 
-      <img class="memberimg" src="/images/duli.jpg"> 
+      <img class="memberimg" src="images/duli.jpg"> 
       <h2> Avdulla Haliti </h2> 
       <p> I'm Avdulla Haliti. I come from Vitina. I'm a hard working student and an engineer to be! I also love to help people who face different difficulties.  
       </p>

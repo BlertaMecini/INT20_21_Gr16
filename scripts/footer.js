@@ -1,4 +1,4 @@
-
+/*form validation*/
 
 function validate_form() {
 
@@ -38,7 +38,7 @@ function validate_form() {
 
 
 
-
+/*Canvas*/ 
 var c = document.getElementById("mycanvas");
 var ctx = c.getContext("2d");
 ctx.font = "Arial 20px";
