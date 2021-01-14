@@ -9,12 +9,12 @@
 	font-family: 'sans';
 	src: url(fonts/OpenSans-ExtraBoldItalic.ttf);
 	font-style: normal;
-	font-weight: 25;
+	font-weight: 100;
 }
 
-span, button {
+span, button,input {
 	font-family: sans;
-	font-weight: 15;
+	font-weight: 100;
 }
 
 .lform {
