@@ -17,7 +17,7 @@ body
     position:relative;
     display:flex; 
     flex-direction: column; 
-     min-height: 100%;
+    min-height: 100%;
 
 }
 
@@ -80,7 +80,7 @@ nav ul li a.active, nav ul li a:hover
     background: rgba(0, 0, 0, 0.4);
     transition: 0,5s;  
 }
-#mylogo:hover
+#logo:hover
 { 
     background: none;
 }

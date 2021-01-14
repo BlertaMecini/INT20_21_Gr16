@@ -1,4 +1,4 @@
-/*styling the slideshow section*/ 
+
 
 .slideshow-section 
 { 
@@ -25,7 +25,7 @@
  vertical-align: middle;  
 }
 
-/* Slideshow container */
+
 .slideshow-container {
   max-width: 70%;
   position: relative; 
@@ -35,7 +35,6 @@
 
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -51,18 +50,16 @@
   
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a background color */
 .prev:hover, .next:hover {
   background-color: #bbb;
 }
 
-/* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 14px;
@@ -79,7 +76,7 @@
   background-color: red;
 }
 
-/* Fading animation */
+
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
@@ -97,7 +94,7 @@
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease  size */
+
 @media  screen and (max-width: 700px) {
   .prev, .next 
   {font-size: 12px}  
@@ -108,7 +105,6 @@
 }
    
 
-/*styling the boxes*/ 
 
 .box-section 
 { 
@@ -170,7 +166,6 @@
   text-align: center; 
   cursor: pointer;
 }
-
 
 .quote-section
 { 
@@ -390,6 +385,7 @@
 }
 .social-media  a
 { text-decoration: none;}
+
 #fbicon {
   background: #3B5998;
   color: white; 
