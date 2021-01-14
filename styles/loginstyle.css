@@ -2,17 +2,28 @@
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-
 }
 
+
+@font-face {
+	font-family: 'sans';
+	src: url(fonts/OpenSans-ExtraBoldItalic.ttf);
+	font-style: normal;
+	font-weight: 25;
+}
+
+span, button {
+	font-family: sans;
+	font-weight: 15;
+}
 
 .lform {
 	height: 100%;
 	width: 100%;
 	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("../images/mental.jpg");
 	background-position: center;
-	background-size: cover; 
-	display: flex;  
+	background-size: cover;
+	display: flex;
 }
 
 
@@ -49,7 +60,7 @@
 	position: absolute;
 	width: 130px;
 	height: 100%;
-	background: linear-gradient(to right, #add8e6,#0000FF );
+	background: linear-gradient(to right, #90ee90,#00FF00 );
 	border-radius: 0px;
 	transition: .5s;
 }
@@ -92,7 +103,7 @@
 	cursor: pointer;
 	display: block;
 	margin: auto;
-	background: linear-gradient(to right, #add8e6,#0000FF);
+	background: linear-gradient(to right, #90ee90,#00FF00);
 	border: 0;
 	outline: none;
 	border-radius: 0px;
