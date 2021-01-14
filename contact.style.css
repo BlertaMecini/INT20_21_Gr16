@@ -1,7 +1,8 @@
 
      body 
     {
-        background-image:url(https://files.oyebesmartest.com/uploads/preview/fog-overlacz5.jpeg);
+        /*background-image:url(https://files.oyebesmartest.com/uploads/preview/fog-overlacz5.jpeg);*/
+        background-color: darkgray;
         height: 100%; 
         background-position: center;
         background-repeat: no-repeat;
@@ -13,15 +14,22 @@
         background-color: rgb(128, 138, 136);
         width: 90%;
         height: 180px;
+        border-radius: 10px;
         float:left;
         margin-left: 5%;
         margin-top: 30px;
+        background-image: url(https://bigstoryministries.com/wp-content/uploads/2017/06/bsm-contact-background.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0 0 20px #000000b3;
+
     }
     h1
     {
         margin-top: 10px;
         margin-left: 565px;
-        color: #495252;
+        color: #a2b9b9;
         font-size: 50px;
         font-family:cursive;
     }
@@ -29,7 +37,7 @@
     {
         margin-left: 300px;
         font-size: 25px;
-        color:#495252;
+        color:#a2b9b9;
         font-family:cursive;
     }
     div 
@@ -40,7 +48,7 @@
     mark 
     {
         -webkit-text-fill-color:#495252;
-        background-color: rgb(128, 138, 136);
+        background-color: rgb(172, 172, 172);
     }
     p1 
     {
@@ -49,13 +57,52 @@
         -webkit-text-fill-color:rgb(66, 85, 81);
         
     }
-    p
+    /*p
     {
             margin-left: 45px;
             font-size:20px;
-            -webkit-text-fill-color:rgb(128, 138, 136);
+            -webkit-text-fill-color:rgb(66, 85, 81);
+    }*/
+    .locationbox{
+        width:400px;
+        height:22px;
+        margin-left: 898px;
+        margin-top: 10px;
+        position: absolute; 
+        box-shadow: cadetblue;
+        border-radius: 12PX;
+        background-color: rgb(99, 110, 108);
+        text-align: center;
+        font-family: cursive;
+        color: #a2b9b9;
+        
     }
-    
+    .toptxt p{
+        font-size:18px;
+    }
+    .donwtxr p{
+        font-size: 18px;
+    }
+    .usefularea{
+        width:400px;
+        height:300px;
+        margin-left: 898PX;
+        margin-top: 380px;
+        position: absolute; 
+        box-shadow: cadetblue;
+        border-radius: 50%;
+        background-color: rgb(99, 110, 108);
+        text-align: center;
+        font-family: cursive;
+        color: #a2b9b9;
+        font-size: 1.2em;
+        
+    }
+    .usefularea p{
+        margin-top: 25%;
+        width: 70%;
+        margin-left: 15%;
+    }
 .container {
     width: 400px;
     height: 40px;
@@ -78,22 +125,12 @@
     text-transform: uppercase;
     position: absolute;
 }
-  .atlasi {
-    width: 100%;
-    position: absolute;
-    height: 300px;
-    margin-left: 300px;
-}
-#image_atlasi {
-  width: 25%;
-  height: 300px;
-}
   .harta{ 
    position:absolute;
    width: 35%;
    top: 0;
    margin-left: 59%;
-   margin-top: 30%;
+   margin-top: 29%;
    height: 300px;
 }
 .harta span{
@@ -114,7 +151,7 @@
     align-items: center;
     width: 35%;
     max-width: 500px;
-    background: rgb(128, 138, 136);
+    background: #a2b9b9;
     position: relative;
     top: 50%;
     left: 50%;
@@ -125,9 +162,13 @@
     text-align: center;
     box-shadow: 0 0 20px #000000b3;
     font-family: "Montserrat", sans-serif;
+    background-image: url(https://bigstoryministries.com/wp-content/uploads/2017/06/bsm-contact-background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .txtb{
-    border: 1px solid rgb(49, 54, 53);
+    border: 1px solid rgb(88, 112, 107);
     margin: 8px 0;
     position: relative;
     padding: 12px 18px;
@@ -149,6 +190,7 @@
     outline: none;
     font-size: 18px;
     margin-top: 6px;
+    color: rgb(172, 172, 172);
 }
 .btn1{
     display: inline-block;
