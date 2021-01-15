@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/faq-style.css" rel="stylesheet" type="text/css">
     <link href="styles/header-style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -36,7 +37,98 @@
           </nav> <!--End of navbar-->
           </header>
 
+<h1>FAQ</h1>
 
+<div class="accordion">
+    <div class="accordion-item">
+        <div class="accordion-item-header">
+          What causes depression?
+        </div>
+        <div class="accordion-item-body">
+           <div class="accordion-item-body-content">
+             Symptoms of depression vary from person to person, but often include feeling low, numb, worthless or without hope. You may find you sleep too much or too little, don’t eat properly, and withdraw from social contact with friends and family.There are lots of reasons why someone might feel depressed, but sometimes there isn’t any obvious reason. It can be caused by a difficult life event – losing a job, relationship difficulties, or physical health problems like illness and disability, or low self-esteem.
+           </div>
+        </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        How can I speak to and help someone with a mental health problem like depression or anxiety?
+      </div>
+      <div class="accordion-item-body">
+         <div class="accordion-item-body-content">
+          Here are some suggestions for how you can help people living with anxiety and depression: encourage them to seek help, don’t be afraid to bring it up, don’t blame them and be patient.
+         </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        I feel quite low sometimes. Should I see a therapist?
+      </div>
+      <div class="accordion-item-body">
+         <div class="accordion-item-body-content">
+          One of the most important things to do if you’re feeling down is to open up. Most people feel more comfortable confiding in a close friend or family member in the first instance. Often simply talking about it helps. If the problem continues and begins to interfere with everyday life, you can speak to your GP, who can talk you through the support that’s available.
+         </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        What is the best way to improve my mental wellbeing?
+      </div>
+      <div class="accordion-item-body">
+         <div class="accordion-item-body-content">
+          We all have mental health to look after, as well as physical health, and the way we live our lives has a direct influence on them both. Such as diet, sleep, being outdoors, exercise.
+         </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        What does it mean to be sectioned?
+      </div>
+      <div class="accordion-item-body">
+         <div class="accordion-item-body-content">
+          Being sectioned means that you are kept in hospital under the Mental Health Act 1983. You can be sectioned if your own health or safety are at risk, or to protect other people. There are different types of sections, each with different rules to keep you in hospital. How long you have to stay in hospital depends under which section you are hospitalised. Before you can be lawfully sectioned, you will be assessed by a team of health professionals. If you are sectioned, you can be kept in hospital, stopped from leaving the ward and given treatment for your mental health problems, possibly without your consent. You can lose certain rights, including the right to leave hospital freely.
+         </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <div class="accordion-item-header">
+        What is a personality disorder?
+      </div>
+      <div class="accordion-item-body">
+         <div class="accordion-item-body-content">
+          If you have been diagnosed with a personality disorder it doesn’t mean that you’re fundamentally different from anyone else, but at times you might need extra support. Personality disorders are a type of mental health problem where your attitudes, beliefs and behaviours cause you longstanding problems in your life. Your experience of personality disorder is unique to you. However, you may often experience difficulties in how you think about yourself and others. You may find it difficult to change these unwanted patterns.
+         </div>
+      </div>
+    </div>
+</div>
+
+
+<script type="text/javascript">
+    const accordionItemHeaders = document.querySelectorAll(".accordion-item-header");
+    accordionItemHeaders.forEach(accordionItemHeader => {
+      accordionItemHeader.addEventListener("click", event => {
+        const currentlyActiveAccordionItemHeader = document.querySelector(".accordion-item-header.active");
+        if(currentlyActiveAccordionItemHeader && currentlyActiveAccordionItemHeader!==accordionItemHeader) {
+          currentlyActiveAccordionItemHeader.classList.toggle("active");
+          currentlyActiveAccordionItemHeader.nextElementSibling.style.maxHeight = 0;
+        }
+
+        accordionItemHeader.classList.toggle("active");
+        const accordionItemBody = accordionItemHeader.nextElementSibling;
+        if(accordionItemHeader.classList.contains("active")) {
+          accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px";
+        }
+        else {
+          accordionItemBody.style.maxHeight = 0;
+        }
+      });
+    });
+</script>
 
 <script src="scripts/change-bg-color.js"></script>
 

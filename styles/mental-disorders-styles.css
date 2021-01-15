@@ -79,17 +79,17 @@
     color: rgb(141, 58, 72);
     background-color: transparent;
     text-decoration: none;
-  }
+}
   .center a:hover {
     color: rgb(10, 104, 141);
     background-color: transparent;
     text-decoration: underline;
-  }
+}
   .center a:active {
     color: rgb(195, 163, 216);
     background-color: transparent;
     text-decoration: underline;
-  }
+}
 .center thead tr {
     background-color: #009879;
     color: #ffffff;
