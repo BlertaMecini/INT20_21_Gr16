@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<script src="//code.jquery.com/jquery-3.1.0.slim.min.js"></script>-->
+    <link href="styles/header-style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Mental Health And Wellbeing | To-do list generator</title>
+    <style> 
+
+    body 
+    { 
+    background-image: url(/images/todo.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    }
+   .todo 
+   {background-color: beige;
+    width: 50%; 
+    padding: 10%; 
+    height: auto; 
+    margin: 7% auto;
+    border: 3px solid #3b3b3b; 
+   }
+  .add-items {
+  height: 40px;
+  width: 100%; 
+  border: 3px solid #3b3b3b; } 
+
+  .todo input[type="text"] {
+  width: 70%;
+  height: 100%;
+  border: none;
+
+  padding-left: 10px;
+}
+
+.add {
+  outline: 0;
+  float: right;
+  width: 30%;
+  height: 100%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  background-color: #3b3b3b;
+}
+
+.todo ul {
+  padding: 0;
+  text-align: left;
+  list-style: none; 
+  font-size: 22px;
+}
+
+.todo hr {
+  border-bottom: 2px solid aliceblue;
+  margin: 15px 0;
+
+}
+
+.todo input[type="checkbox"] 
+{ width: 30px; }
+
+.remove {
+  float: right;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+.completed { text-decoration: line-through; }
+</style>
+</head>
+
+<body>
+
+    <header>
+        <!--Start of navbar-->
+          <nav> 
+            
+             <a id="mylogo" href="homepage.html"><img src="images/logo.png" alt="Website's logo."  id="logo"></a> 
+           
+            <input type="checkbox"  id="check" class="check">
+              <label for="check" class="check-button"> 
+                  <i class="fas fa-bars"> </i>
+              </label>
+              <ul>    
+                  <li><a href="homepage.html">Home</a></li>
+                  <li><a href="learn-about-mental-disorders.html">Learn about mental disorders</a></li>
+                  <li><a class="active" href="get-help.html">Get help </a></li>
+                  <li><a href="faq.html">faq </a></li>
+                  <li><a href="contact.html">Contact us</a></li>
+                  <button id="login-btn" onclick="location.href='login.html';">Log in</button> </a> 
+                
+                  
+              </ul>
+          </nav> <!--End of navbar-->
+          </header>
+
+
+ <!--To do list -->
+    <div class="todo"> 
+        <ul id="list-items"> </ul>
+        <form class="add-items">
+        <input type="text" class="form-control" id="todo-list-item" placeholder="What do you need to do today?" autocomplete="off"> 
+        <button class="add" type="submit">Add to List</button> 
+    </form>
+    </div>
+
+
+   <!--Footer-->
+
+   <footer class="footer">
+    <div class="footer-left">
+        <h3 id="mental-health">Mental Health and Wellbeing</h3>
+  
+        <p class="footer-links">
+            <a href="homepage.html">Home</a>
+            ·
+            <a href="learn-about-mental-disorders.html">Learn about mental disorders</a>
+            ·
+            <a href="get-help.html">Get help</a>
+            ·
+            <a href="faq.html">Faq</a>
+            ·
+            <a href="contact.html">Contact us</a>
+        </p>
+  
+        <p class="footer-copyrights">Copyright &copy; <script>document.write(new Date().getFullYear());</script> ,Mental Health and Wellbeing. All Rights Reserved.</p>
+  
+        <div class="footer-icons">
+  
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+  
+        </div>
+  
+    </div>
+
+
+  
+    <div class="footer-right">
+    
+      <canvas id="mycanvas" width="80" height="70"
+      style="border:2px solid #ffffff; margin-right:10px;">
+  Canvas is not supported on your browser.
+</canvas>
+  
+<form name="contact_form" onsubmit="return validate_form()"> 
+        
+          <input type="text" name="email" placeholder="Enter your email">
+          <textarea name="message" id="message" placeholder="Leave a message"></textarea>
+          <input type="submit" value="Send" id="submit-button">
+        </form>
+  
+    </div>
+    <script src="scripts/footer.js"></script>
+  </footer>
+
+
+    <script> 
+    $(document).ready(function() 
+    {   
+        $('#list-items').html(localStorage.getItem('listItems'));
+        $('.add-items').submit(function(event)  {
+    event.preventDefault();
+    var item= $('#todo-list-item').val();
+    if(item)
+
+    { $('#list-items').append("<li><input class='checkbox' type='checkbox'/>" + item +"<a class='remove'>x</a><hr></li>");
+
+       localStorage.setItem('listItems', $('#list-items').html());
+       $('#todo-list-item').val(""); }
+     });
+
+  $(document).on('change','.checkbox',function()
+
+  { if($(this).attr('checked'))
+
+    {
+      $(this).removeAttr('checked');
+
+    }
+
+    else
+    {
+      $(this).attr('checked','checked');
+
+    }
+
+    $(this).parent().toggleClass('completed');
+
+     localStorage.setItem('listItems', $('#list-items').html());
+
+  });
+
+  $(document).on('click','.remove',function()
+
+  { $(this).parent().remove();
+     localStorage.setItem('listItems', $('#list-items').html());
+   });
+}); 
+    </script>
+
+</body>
+</html>
