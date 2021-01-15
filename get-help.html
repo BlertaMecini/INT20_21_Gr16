@@ -129,7 +129,7 @@ $(document).ready(function(){
         </video>
       </figure>
       <figure class="gallery__item gallery__item--5">
-        <video id="video5"  poster="/images/video5poster.png " controls>
+        <video id="video5"  poster="images/video5poster.png " controls>
               
           <source src="images/video5.mp4" type="video/mp4">
           
@@ -137,7 +137,7 @@ $(document).ready(function(){
         </video>
       </figure>
       <figure class="gallery__item gallery__item--6">
-        <video id="video6"  poster="/images/video6poster.png " controls>
+        <video id="video6"  poster="images/video6poster.png " controls>
               
           <source src="images/video6.mp4" type="video/mp4">
           
@@ -189,6 +189,47 @@ $(document).ready(function(){
 
 <!--Corona virus/lockdown section-->
 <div class="table"> 
+  <button  class="buttons" id="butoni1">Hide</button> 
+  <button  class="buttons" id="butoni2">Show</button>
+  <button  class="buttons" id="butoni3">Fade out</button>
+  <button  class="buttons" id="butoni4">Fade in</button>
+  <button  class="buttons" id="butoni5">Slide Toggle</button>
+
+   <br> <br> 
+  <h1 id="corona">Mental Health During Pandemic</h1>
+  <br> <br> 
+
+<script>
+
+  $(document).ready(function(){
+   // Hide with callback function 
+    $("#butoni1").click(function(){
+    $("#corona").hide("1000", function(){
+      alert("The title is now hidden"); 
+    });
+  });
+
+    $("#butoni2").click(function(){
+    $("#corona").show(1000);
+  });
+
+  $("#butoni3").click(function(){
+    $("#corona").fadeOut(1000);
+   }); 
+
+  $("#butoni4").click(function(){
+    $("#corona").fadeIn(1000);
+   });
+
+  $("#butoni5").click(function(){
+    $("#corona").slideToggle(1000);
+  });
+ });
+
+
+</script> 
+
+<br> <br> 
 <p id="multiple-columns"> The coronavirus disease 2019 (COVID-19) pandemic has taken a toll on the mental health of millions of people around the world.
     <br> For many people, it is challenging to adapt to the new realities of working from home, temporary unemployment, home-schooling of children, 
      and lack of physical contact with other family members, friends and colleagues. 

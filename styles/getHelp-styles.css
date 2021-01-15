@@ -195,7 +195,7 @@ hr
   background-color: #9bbac2;
   border: 5px solid #f5e4c3; 
   min-height: 300px; 
-  max-width: 40%; 
+  width: 60%; 
   margin :3% auto; 
   text-align: center; 
 
@@ -214,7 +214,21 @@ hr
   font-size: 22px; 
   color: white; 
 }
+ 
+.buttons 
+{ 
+  padding: 0.3%;
+  background-color:rgba(162,197,236,1); 
+  border: 1px solid black; 
+  border-radius: 10%; 
+  font-weight: bold; 
+} 
 
+.buttons:hover 
+{ 
+  background-color:rgb(8, 74, 112); 
+  color: white; 
+}
 #multiple-columns {
 column-count: 3;
   column-gap: 40px;
@@ -227,7 +241,7 @@ column-count: 3;
     max-width: 100%; 
     height:auto; 
     margin: 2%; 
-    padding: 2%;   
+    padding: 5%;   
     font-size: 20px;  
    
 }
@@ -358,3 +372,5 @@ table {
   font-size: 20px;
   color:red;  
 }
+
+
