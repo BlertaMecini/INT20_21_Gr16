@@ -322,6 +322,17 @@ table {
     padding-left: 3%;
 }
 
+ #declutter a
+{ 
+  text-decoration: none;
+  color: red; 
+}
+
+#declutter a:hover 
+{ 
+  color: black; 
+}
+
 
 #exercise img { 
     margin-bottom: 2%; 

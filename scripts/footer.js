@@ -23,7 +23,7 @@ function validate_form() {
     alert("Please fill the 'leave a message' box!");
     return false; 
       } 
-  else  if(textbox.length <=10){
+    if(textbox.length <=10){
 
         alert("Make sure the input text is more than 10 characters long!");
         return false; 
