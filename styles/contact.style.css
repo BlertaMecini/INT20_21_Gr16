@@ -55,8 +55,8 @@
       .locationbox{
           width:400px;
           height:22px;
-          margin-left: 898px;
-          margin-top: 100px;
+          margin-left: 60%;
+          margin-top: 5%;
           
           box-shadow: cadetblue;
           border-radius: 12px;
@@ -130,17 +130,9 @@
      top: 0;
      margin-left: 59.7%;
      margin-top: 38%;
-     height: 300px;
+     
   }
-  .harta span{
-      color: rgb(60, 124, 110);
-      padding: 29px;
-      padding-bottom: 20px ;
-      width: 100%;
-      margin-bottom: 10%;
-      margin-left: 23%;
-      font-family:Verdana, Geneva, Tahoma, sans-serif;
-  }
+ 
   .harta iframe{
       margin-top: 5%;
   }
