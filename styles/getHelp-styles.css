@@ -6,6 +6,7 @@ article
 }
 .start 
 { 
+
     background-image: url(../images/mentalhealth.jpg);
     background-position: center;
     background-size:cover;
@@ -19,6 +20,7 @@ article
 @media screen and (max-width: 1100px)
 {  
     .start {
+
         background-image: url(../images/mentalhealth.jpg);
         background-position: center;
         background-size:contain;
