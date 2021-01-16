@@ -29,7 +29,7 @@
   <p1> <strong>HELPING YOU IS OUR PLEASURE!</strong></p1>
 
   <div class="toptxt">
-    <p>If you have questions then take a look at our <mark><u>FAQ</u></mark> (frequently asked questions), perhaps it
+    <p>If you have questions then take a look at our <mark>FAQ</mark> (frequently asked questions), perhaps it
     can help
     you.
     But if you still didn't get your answers, do not hesitate to contact us by answering these questions below and by
@@ -51,7 +51,7 @@
   <br /><br />
 
   <div class="boxes">
-    <form name="myForm" onsubmit="return mySubmitFunction(event)">
+    <form name="myForm" id="contact_form" onsubmit="return mySubmitFunction(event)">
       <div class="txtb">
         <label> Name:</label>
         <input type="text" placeholder="Enter your name" id="name" name="name" required>
@@ -64,7 +64,7 @@
 
       <div class="txtb">
         <label for="Email">Email:</label>
-        <input type="email" placeholder="Enter your email" id="" required />
+        <input type="email" placeholder="Enter your email" id="email" required />
       </div>
 
       <div class="txtb">
@@ -74,33 +74,31 @@
 
       <div class="txtb">
         <label for="Date">Date:</label>
-        <input type="date" placeholder="Enter today's date" required> <br />
+        <input type="date" placeholder="Enter today's date" id="date" required> <br />
+      </div>
+      <div class="txtb">
+        <label>Send your message: </label>
+        <textarea id="question" rows="4" required></textarea>
       </div>
 
-      <input type="submit" onclick="submitForm()" class="btn1" value="Submit">
-      <!--<button onclick="myFunction()" >Submit</button>-->
+      <input type="submit" onclick="submitForm()" class="btn1"   id="update_button" value="Submit">
 
-      <!--<button onclick="FunksioniIm()">Send</button>--></a>
     </form>
 
-    <form>
+    <!--<form>
     <div class="txtb">
       <label>Send your message: </label>
       <textarea id="question" rows="4" required></textarea>
     </div>
     
 
-    <input type="submit" class="btn2" value="Send" /> 
+    <input type="submit" class="btn2" value="Send" />
 
-  </form>
-
-  </div>
-
+  </form>-->
 
   </div>
 
-
-
+  </div>
 
   <!--<p> <strong>WE ARE ALWAYS HERE FOR YOU!</strong></p>-->
   <div class="downtxt"> <p>In case if you need more information about mental health services that may be
@@ -127,5 +125,11 @@
   function mySubmitFunction(e){
     e.preventDefault();
     alert('Your message has been successfully sent!');
+    document.getElementById('name').value = ''
+    document.getElementById('surname').value = ''
+    document.getElementById('email').value = ''
+    document.getElementById('address').value = ''
+    document.getElementById('date').value = ''
+    document.getElementById('question').value = ''
   }
 </script>

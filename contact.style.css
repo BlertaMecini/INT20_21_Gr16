@@ -215,4 +215,9 @@
     border-radius: 8px;
 }
 
+
+#contact_form input::selection {
+    background-color: #000000;
+    opacity: 0;
+}
     
