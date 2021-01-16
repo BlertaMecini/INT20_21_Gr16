@@ -1,14 +1,14 @@
 /*form validation*/
 
 function validate_form() {
-
-    var x = document.forms["contact_form"]["email"].value;
+  var x = document.getElementById("myemail").value;
+    
     if (x == "") {
       alert("Email must be filled out!");
       return false;
     }
 
-    var z = document.forms["contact_form"]["email"].value;
+    var z = document.getElementById("myemail").value;
     var atpos=z.indexOf("@");
     var dotpos=z.lastIndexOf(".");
     if (atpos<0 || dotpos<atpos+1 || dotpos+1>=z.length)
