@@ -1,130 +1,128 @@
 
 <!DOCTYPE html>
 <html>
-
-    <head>
-        <meta charset="utf-8">
-<title> Mental Health And Wellbeing | Contact Us </title>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet"> 
-<link href="styles/header-style.css" rel="stylesheet" type="text/css">
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-  <link rel="stylesheet" href="contact.style.css">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device=width, initial-scale=1.0" />
+  <title> Mental Health And Wellbeing | Contact Us </title>
+  <link rel="stylesheet" href=styles/contact.style.css>
+  <link href="styles/header-style.css" rel="stylesheet" type="text/css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
   <script src="lib/script.js"></script>
-  <!--<script>
-    function myFunction() {
-      alert("Na keni kontaktuar me sukses!");
-    }
-    function FunksioniIm() {
-      alert("Pyetja apo sugjerimi juaj eshte derguar me sukses, ju faleminderit!");
-    }
-  </script>-->
-
+ 
 </head>
 
 <body>
-
-
-<header>
+  <header>
     <!--Start of navbar-->
       <nav> 
         
-         <a id="mylogo"  href="homepage.html"><img src="/images/logo.png" alt="Website's logo."  id="logo"></a> 
+         <a id="mylogo" href="homepage.html"><img src="images/logo.png" alt="Website's logo."  id="logo"></a> 
        
         <input type="checkbox"  id="check" class="check">
           <label for="check" class="check-button"> 
               <i class="fas fa-bars"> </i>
           </label>
           <ul>    
-              <li><a  href="homepage.html">Home</a></li>
+              <li><a href="homepage.html">Home</a></li>
               <li><a href="learn-about-mental-disorders.html">Learn about mental disorders</a></li>
-              <li><a href="get-help.html">Get help </a></li>
+              <li><a class="active" href="get-help.html">Get help </a></li>
               <li><a href="faq.html">faq </a></li>
-              <li><a class="active" href="contact.html">Contact us</a></li>
+              <li><a href="contact.html">Contact us</a></li>
               <button id="login-btn" onclick="location.href='login.html';">Log out</button> </a> 
             
               
           </ul>
       </nav> <!--End of navbar-->
+      </header> 
 
+<div class="contact-part"> 
   <div id="box1" class="box">
     <h1> <b>CONTACT US</b></h1>
     <br />
-    <p2>We're always here for you. Get in touch with us using the forms below! </p2>
+    <p>We're always here for you. Get in touch with us using the forms below! </p>
   </div>
 
+  <h2> <strong>HELPING YOU IS OUR PLEASURE!</strong></h2>
 
-
-  <p1> <strong>HELPING YOU IS OUR PLEASURE!</strong></p1>
-
-  <div> If you have questions then take a look at our <mark>FAQ</mark> (frequently asked questions), perhaps it can help
+  <div class="toptxt">
+    <p>If you have questions then take a look at our <a href="faq.html">FAQ</a> (frequently asked questions), perhaps it
+    can help
     you.
     But if you still didn't get your answers, do not hesitate to contact us by answering these questions below and by
     filling out the form below.
-    It would be our pleasure to help!
-    <br />  <br />
-    <form class="boxes">
-      <label for="username">Name:</label><br>
-      <input type="text" placeholder="Enter your name" id="username" name="username" required><br>
-      <label for="surname">Surname:</label><br>
-      <input type="text" placeholder="Enter your surname" id="surname" name="surname" required><br />
-      <label for="Adress">Email:</label><br>
-      <input type="email" placeholder="Enter your email" id="email" required /><br />
-      <label for="address">Address:</label><br>
-      <input type="text" placeholder="Enter your address" id="address" required /> <br />
-      <label for="Date">Date:</label><br>
-      <input type="date" placeholder="Enter today's date" required> <br /><br />
+    It would be our pleasure to help!</p>
+  </div>
 
-      <select id="country">
-        <option disabled selected value> select your country </option>
-        <option value="Kosovo">Kosovo</option>
-        <option value="Albania">Albania</option>
-        <option value="Montenegro">Montenegro</option>
-        <option value="North Macedonia">North Macedonia</option>
-        <option value="Croatia">Croatia</option>
-        <option value="Italy">Italy</option>
-        <option value="Turkey">Turkey</option>
-      </select>
-      <br><br>
-      <label for="Gender">Gender:</label><br />
-      <input type="radio" id="male" name="gender" value="male"> Male
-      <input type="radio" id="female" name="gender" value="female"> Female<br><br>
-      <button onclick="myFunction()" aria-required="true">Submit</button>
-      <br /><br />
+  <div class="locationbox">
+    <b>OUR LOCATION:</b>
+  </div>
 
-      <span>What is your question?</span>
-      <br>
-      <textarea id="question" rows="4"></textarea>
-      <br><br>
-      <button onclick="FunksioniIm()">Send</button>
-      <br><br>
+  <div class="usefularea">
+    <p>
+    Over 100 members a day are joining us, join us and benefit by following our tips carefully. Our door is always
+    opened!
+  </p>
+  </div>
+
+
+  <div class="boxes">
+    <form name="myForm" id="contact_form" onsubmit="return mySubmitFunction(event)">
+      <div class="txtb">
+        <label> Name:</label>
+        <input type="text" placeholder="Enter your name" id="name" name="name" required>
+      </div>
+
+      <div class="txtb">
+        <label for="surname">Surname:</label>
+        <input type="text" placeholder="Enter your surname" id="surname" name="surname" required>
+      </div>
+
+      <div class="txtb">
+        <label for="Email">Email:</label>
+        <input type="email" placeholder="Enter your email" id="email" required />
+      </div>
+
+      <div class="txtb">
+        <label for="address">Address:</label>
+        <input type="text" placeholder="Enter your address" id="address" required />
+      </div>
+
+      <div class="txtb">
+        <label for="Date">Date:</label>
+        <input type="date" placeholder="Enter today's date" id="date" required> <br />
+      </div>
+      <div class="txtb">
+        <label>Send your message: </label>
+        <textarea id="question" rows="4" required></textarea>
+      </div>
+
+      <input type="submit" onclick="submitForm()" class="btn1"   id="update_button" value="Submit">
+
     </form>
 
   </div>
 
-
-  <p> <strong>WE ARE ALWAYS HERE FOR YOU</strong></p>
-  <div>In case if you need more information about mental health services that may be
-    available to you, just email <a href="mailto:mentalhealthstaff.outlook.com">HealthMentalStaff.</a>
-    <br />
-    <hr />
-    Also if needed, now you can you can now send your texts through to +38349288987.
   </div>
 
 
+  <div class="downtxt"> <p>In case if you need more information about mental health services that may be
+    available to you, just email <a href="mailto:mentalhealthstaff.outlook.com">HealthMentalStaff.</a></p>
+    <br />
+    <hr />
+    <br>
+    <p>Also if needed, now you can you can now send your texts through to +38349288987.</p>
+  </div>
+
   <div class="harta">
-
-    <span><B><u>Our location:</u><b></span><br>
-
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2934.5926651604004!2d21.164962015312987!3d42.648794624811245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13549ec1b6ecb2c1%3A0x7f0893730efce187!2sFakulteti%20Teknik!5e0!3m2!1sen!2s!4v1610324418646!5m2!1sen!2s"
       width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
       tabindex="0"></iframe>
   </div>
+</div>
 
-
-
-    
   <!--Footer-->
 
   <footer class="footer">
@@ -175,6 +173,20 @@
     </div>
     <script src="scripts/footer.js"></script>
   </footer>
+
 </body>
+
+<script>
+  function mySubmitFunction(e){
+    e.preventDefault();
+    alert('Your message has been successfully sent!');
+    document.getElementById('name').value = ''
+    document.getElementById('surname').value = ''
+    document.getElementById('email').value = ''
+    document.getElementById('address').value = ''
+    document.getElementById('date').value = ''
+    document.getElementById('question').value = ''
+  }
+</script>
 
 </html>

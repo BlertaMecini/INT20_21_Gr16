@@ -1,46 +1,224 @@
 
-        .box{
-        background-color: rgb(101, 113, 180);
-        width: 1400px;
-        height: 180px;
-        float:left;
-        margin-top: 30px;
-        padding:30px;}
-    h1{
-        margin-top: 10px;
-        margin-left: 565px;
-        color: rgb(255, 255, 255);
-        font-size: 50px;
-        font-family:serif;
-    }
-    p2{
-        margin-left: 300px;
-        font-size: 25px;
-        color:rgb(255, 255, 255);
-        font-family:cursive;
-    }
-    div {
-        text-align: left;
-        margin: 45px;
-    }
-    mark {
-        -webkit-text-fill-color:rgb(43, 90, 161);
-        background-color: rgb(199, 204, 202);
-    }
-    p1 {
-        margin-left: 45px;
-        font-size: 40px;
-        -webkit-text-fill-color:rgb(43, 91, 131);
-
-    }
-    p {
-    margin-left: 45px;
-    font-size: 20px;
-    -webkit-text-fill-color:rgb(43, 91, 131);
-
-}
-body {
-    background-color: rgb(199, 204, 202);
+      body 
+      {
+       
+         background-color:darkgray;
+          
+        
+      }
+     
     
-}
+      .box
+      {
+          background-color: rgb(128, 138, 136);
+          width: 90%;
+          height: 180px;
+          border-radius: 10px;
+          float:left;
+          margin-left: 5%;
+          margin-top: 30px;
+          background-image: url(https://bigstoryministries.com/wp-content/uploads/2017/06/bsm-contact-background.jpg);
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          box-shadow: 0 0 20px #000000b3;
+  
+      }
+      .box h1
+      {
+          margin-top: 10px;
+          text-align: center;
+          color: #a2b9b9;
+          font-size: 50px;
+          font-family:cursive;
+      }
+      h2 
+      { 
+          margin-left: 4%;  
+        
+      }
+     .box p 
+     { 
+         font-size: 25px;
+    
+         text-align: center;
+         font-family: cursive;
+         color:#a2b9b9;
+     }
+      div 
+      {
+          text-align: left;
+          margin: 45px;
+      }
 
+    
+      .locationbox{
+          width:400px;
+          height:22px;
+          margin-left: 898px;
+          margin-top: 100px;
+          
+          box-shadow: cadetblue;
+          border-radius: 12px;
+          background-color: rgb(99, 110, 108);
+          text-align: center;
+          font-family: cursive;
+          color: #a2b9b9;
+          
+      }
+      .toptxt p{
+          font-size:20px;
+          margin-left: 1%; 
+      }
+      .toptxt a 
+      { 
+          text-decoration: none;
+
+      }
+      .downtxt p{
+          font-size: 20px;
+      }
+      .downtxt a 
+      { 
+          text-decoration: none;
+      }
+      .usefularea{
+          width:400px;
+          height:300px;
+          margin-left: 898PX;
+          margin-top: 380px;
+          position: absolute; 
+          box-shadow: cadetblue;
+          border-radius: 50%;
+          background-color: rgb(99, 110, 108);
+          text-align: center;
+          font-family: cursive;
+          color: #a2b9b9;
+          font-size: 1.2em;
+          
+      }
+      .usefularea p{
+          margin-top: 25%;
+          width: 70%;
+          margin-left: 15%;
+      }
+  .container {
+      width: 400px;
+      height: 40px;
+      line-height: 200px;
+      border-radius: 10%;
+      font-size: 50px;
+      color: #fff;
+      text-align:center;
+      background: rgb(88, 88, 88);
+      margin-bottom: 0px;
+      margin-left: 850px;
+      position: absolute;
+      font-size: medium; 
+    }
+  .container h1{
+      margin: 0;
+      padding: 0;
+      font-family: Verdana;
+      font-size: 3em;
+      text-transform: uppercase;
+      position: absolute;
+  }
+    .harta{ 
+     position:absolute;
+     width: 35%;
+     top: 0;
+     margin-left: 59.7%;
+     margin-top: 38%;
+     height: 300px;
+  }
+  .harta span{
+      color: rgb(60, 124, 110);
+      padding: 29px;
+      padding-bottom: 20px ;
+      width: 100%;
+      margin-bottom: 10%;
+      margin-left: 23%;
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .harta iframe{
+      margin-top: 5%;
+  }
+  .boxes
+  { 
+      justify-content: center;
+      align-items: center;
+      width: 35%;
+      max-width: 500px;
+      background: hsl(180, 14%, 68%);
+      position: relative;
+      top: 25%;
+      margin-bottom:50px;
+      left: 39%;
+      transform: translate(-112.7%, -3.5%);
+      padding: 10px 40px;
+      box-sizing:border-box;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 0 20px #000000b3;
+      font-family: "Montserrat", sans-serif;
+      background-image: url(https://bigstoryministries.com/wp-content/uploads/2017/06/bsm-contact-background.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 2%;
+    
+  }
+  .txtb{
+      border: 1px solid rgb(88, 112, 107);
+      margin: 8px 0;
+      position: relative;
+      padding: 12px 18px;
+      border-radius: 8px;
+      align-items: center;
+      text-align: center;
+  }
+  .txtb label{
+      display: block;
+      text-align: left;
+      color: rgb(55, 83, 64);
+      text-transform: uppercase;
+      font-size: 14px;
+  }
+  .txtb input,.txtb textarea{
+      width: 100%;
+      border:none;
+      background: none;
+      outline: none;
+      font-size: 18px;
+      margin-top: 6px;
+      color: rgb(172, 172, 172);
+  }
+  .btn1{
+      display: inline-block;
+      background: #2a3636;
+      padding: 14px 0;
+      color: rgb(139, 155, 144);
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-top: 8px;
+      width: 100%;
+      border-radius: 8px;
+  }
+  .btn2{
+      display: inline-block;
+      background: #2a3636;
+      padding: 14px 0;
+      color: rgb(139, 155, 144);
+      text-transform: uppercase;
+      cursor: pointer;
+      margin-top: 8px;
+      width: 100%;
+      border-radius: 8px;
+  }
+  
+  
+  #contact_form input::selection {
+      background-color: #000000;
+      opacity: 0;
+  }
