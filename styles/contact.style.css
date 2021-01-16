@@ -32,9 +32,10 @@
           font-size: 50px;
           font-family:cursive;
       }
-      h2 
+      .contact-part h2 
       { 
           margin-left: 4%;  
+          font-weight: bold;
         
       }
      .box p 
