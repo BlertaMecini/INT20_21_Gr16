@@ -12,7 +12,7 @@ Ky projekt eshte nje website i realizuar ne kuader te lendes Interneti. Qellimi 
 * Diana Beqiri 
 * Betim Dinaj 
 * Qendrim Gashi 
-<a href = "https://github.com/BlertaMecini/INT20_21_Gr16/graphs/contributors">
-<img src = "https://contrib.rocks/image?repo=BlertaMecini//INT20_21_Gr16"/>
+<a href="https://github.com/BlertaMecini/INT20_21_Gr16/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=BlertaMecini/INT20_21_Gr16"/>
 </a>
 
